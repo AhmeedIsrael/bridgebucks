@@ -1,5 +1,12 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/$(whoami)/public_html
-    - /bin/cp -R index.html about.html pof.html loans.html partners.html contact.html style.css assets $DEPLOYPATH
+    - export DEPLOYPATH=/home/$(whoami)/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp about.html $DEPLOYPATH
+    - /bin/cp pof.html $DEPLOYPATH
+    - /bin/cp loans.html $DEPLOYPATH
+    - /bin/cp partners.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
