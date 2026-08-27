@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#F1F5F9"/>
+  <path d="M30 18 L45 42 L15 42 Z" fill="#073B78"/>
+  <path d="M45 18 L60 42 L30 42 Z" fill="#18AEEB"/>
+  <text x="72" y="36" font-family="'Inter', sans-serif" font-weight="800" font-size="18" fill="#073B78" letter-spacing="1">APEX BANK</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect width="200" height="60" rx="8" fill="#F1F5F9"/>
+  <rect x="22" y="18" width="24" height="24" rx="4" fill="#18AEEB"/>
+  <path d="M28 30 L40 30 M34 24 L34 36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <text x="56" y="36" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#073B78" letter-spacing="1">STERLING CAPITAL</text>
+</svg>

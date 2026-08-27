@@ -1,0 +1,16 @@
+# OS Junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / Temp
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
