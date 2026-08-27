@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/$(whoami)/public_html
+    - /bin/cp -R index.html about.html pof.html loans.html partners.html contact.html style.css assets $DEPLOYPATH
