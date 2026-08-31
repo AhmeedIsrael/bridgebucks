@@ -630,8 +630,28 @@
           $(".preloader").delay(600).fadeOut();
       });
   }
-  loader();
-    
+      //>> Contact & Application Form Email & WhatsApp Auto-Dispatch <<//
+      $('form').on('submit', function(e) {
+          var $form = $(this);
+          if ($form.hasClass('search-form')) return; // Ignore search form
+          
+          var name = $form.find('input[placeholder*="Name"], input[type="text"]:first').val() || 'Client';
+          var email = $form.find('input[type="email"]').val() || '';
+          var phone = $form.find('input[type="tel"]').val() || '';
+          var message = $form.find('textarea').val() || '';
+          var selectVal = $form.find('select').map(function() { return $(this).find('option:selected').text(); }).get().join(' | ');
+
+          var subject = encodeURIComponent("New Website Submission from " + name);
+          var bodyContent = encodeURIComponent(
+              "Full Name: " + name + "\n" +
+              "Email: " + email + "\n" +
+              "Phone/WhatsApp: " + phone + "\n" +
+              (selectVal ? "Category/Details: " + selectVal + "\n" : "") +
+              (message ? "Message: " + message + "\n" : "")
+          );
+
+          window.location.href = "mailto:info.bridgebucks@gmail.com?subject=" + subject + "&body=" + bodyContent;
+      });
 
 })(jQuery); // End jQuery
 
