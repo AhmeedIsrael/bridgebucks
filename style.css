@@ -1894,3 +1894,11 @@ section ul:not(.breadcrumb-items):not(.mean-nav ul):not(.main-menu ul):not(.offc
     font-size: 28px !important;
   }
 }
+
+/* Preloader Instant Dismiss & Pointer Events Override */
+.preloader.loaded {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  display: none !important;
+}

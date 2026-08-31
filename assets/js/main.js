@@ -623,13 +623,23 @@
         });
     }
 
-    function loader() {
-      $(window).on('load', function() {
-          // Animate loader off screen
-          $(".preloader").addClass('loaded');
-          $(".preloader").delay(600).fadeOut();
-      });
-  }
+    //>> Preloader Dismiss & Fail-Safe <<//
+    function hidePreloader() {
+        if ($(".preloader").length) {
+            $(".preloader").addClass('loaded');
+            $(".preloader").delay(400).fadeOut(400, function() {
+                $(this).remove();
+            });
+        }
+    }
+
+    if (document.readyState === 'complete') {
+        hidePreloader();
+    } else {
+        $(window).on('load', hidePreloader);
+        // Fail-safe fallback to prevent preloader from ever getting stuck
+        setTimeout(hidePreloader, 1000);
+    }
       //>> Contact & Application Form Email & WhatsApp Auto-Dispatch <<//
       $('form').on('submit', function(e) {
           var $form = $(this);
