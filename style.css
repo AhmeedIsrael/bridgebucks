@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, .theme-btn, .header-logo, .main-menu {
 .faq-content h2,
 .values-section h2,
 .ceo-timeline-section h2,
-section h2:not(.hero-content h1):not(.accordion-button):not(.offcanvas-title):not(.footer-logo) {
+section h2:not(.hero-content h1):not(.accordion-button):not(.offcanvas-title):not(.footer-logo):not(.company-header-badge h2):not(.form-section-header h2) {
   font-size: 46px !important;
   line-height: 1.22 !important;
   font-weight: 800 !important;
@@ -51,7 +51,7 @@ section h2:not(.hero-content h1):not(.accordion-button):not(.offcanvas-title):no
 .about-content h3,
 .service-details-content h3,
 .values-section h3,
-section h3:not(.footer-widget h3):not(.accordion-header) {
+section h3:not(.footer-widget h3):not(.accordion-header):not(.form-section-header h3):not(.company-header-badge h3) {
   font-size: 26px !important;
   line-height: 1.35 !important;
   font-weight: 800 !important;
@@ -85,7 +85,7 @@ section h3:not(.footer-widget h3):not(.accordion-header) {
 .service-details-content p,
 .ceo-timeline-section p,
 .values-section p,
-section p:not(.hero-content p):not(.footer-widget p):not(.offcanvas__contact p):not(.badge-text) {
+section p:not(.hero-content p):not(.footer-widget p):not(.offcanvas__contact p):not(.badge-text):not(.form-section-header p):not(.company-header-badge p) {
   font-size: 18px !important;
   line-height: 1.8 !important;
   color: #374151 !important;
@@ -2012,4 +2012,166 @@ section ul:not(.breadcrumb-items):not(.mean-nav ul):not(.main-menu ul):not(.offc
 
 .sidebar__toggle:hover i {
   color: #ffffff !important;
+}
+
+/* ==========================================================================
+   PREMIUM NAVBAR DROPDOWN STYLING
+   ========================================================================== */
+.main-menu ul li.has-dropdown > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.main-menu ul li.has-dropdown > a i {
+    transition: transform 0.3s ease !important;
+    font-size: 11px !important;
+    margin-left: 2px;
+}
+
+.main-menu ul li.has-dropdown:hover > a i {
+    transform: rotate(180deg) !important;
+}
+
+.header-main .main-menu ul li .submenu {
+    position: absolute;
+    top: 100%;
+    inset-inline-start: 0;
+    min-width: 260px !important;
+    width: max-content !important;
+    background: #FFFFFF !important;
+    border-radius: 14px !important;
+    border: 1px solid #E2E8F0 !important;
+    border-top: 4px solid var(--navy) !important;
+    box-shadow: 0 20px 45px rgba(7, 59, 120, 0.16) !important;
+    padding: 8px !important;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(12px) !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.header-main .main-menu ul li:hover > .submenu {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.header-main .main-menu ul li .submenu li {
+    display: block !important;
+    width: 100% !important;
+    margin: 3px 0 !important;
+    padding: 0 !important;
+}
+
+.header-main .main-menu ul li .submenu li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    color: #1E293B !important;
+    padding: 11px 18px !important;
+    border-radius: 10px !important;
+    border-bottom: none !important;
+    white-space: nowrap !important;
+    transition: all 0.25s ease !important;
+    background: transparent !important;
+}
+
+.header-main .main-menu ul li .submenu li a:hover,
+.header-main .main-menu ul li .submenu li:hover > a {
+    background: rgba(7, 59, 120, 0.07) !important;
+    color: var(--navy) !important;
+    font-weight: 700 !important;
+    transform: translateX(4px) !important;
+}
+
+.header-main .main-menu ul li .submenu li a i {
+    font-size: 14px !important;
+    width: 20px;
+    text-align: center;
+    color: var(--navy) !important;
+    transition: transform 0.2s ease !important;
+}
+
+.header-main .main-menu ul li .submenu li a:hover i {
+    transform: scale(1.15) !important;
+}
+
+/* ==========================================================================
+   FORCE HIGH CONTRAST ON DARK CONTAINERS (PREVENT CONTRAST RECURRENCE)
+   ========================================================================== */
+.company-header-badge h2,
+section .company-header-badge h2,
+div.company-header-badge h2 {
+    color: #FFFFFF !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 4px !important;
+    text-transform: uppercase !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+}
+
+.company-header-badge p.tagline,
+section .company-header-badge p.tagline,
+div.company-header-badge p.tagline {
+    color: #F4C542 !important;
+    font-size: 15px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+}
+
+.company-header-badge h3.form-title,
+section .company-header-badge h3.form-title,
+div.company-header-badge h3.form-title {
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    display: inline-block !important;
+    padding: 6px 24px !important;
+    border-radius: 30px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   SUB-MENU APPLICATION CTA BUTTON BACKGROUNDS
+   ========================================================================== */
+a.nav-btn-apply,
+.header-main .main-menu ul li .submenu li a.nav-btn-apply,
+.header-main .main-menu ul li .submenu li.nav-cta-item a,
+.mean-container .mean-nav ul li ul li a.nav-btn-apply {
+    background: linear-gradient(135deg, #073B78 0%, #031830 100%) !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 11px 18px !important;
+    margin-top: 4px !important;
+    box-shadow: 0 4px 12px rgba(7, 59, 120, 0.25) !important;
+    transition: all 0.25s ease !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+a.nav-btn-apply i,
+.header-main .main-menu ul li .submenu li a.nav-btn-apply i,
+.header-main .main-menu ul li .submenu li.nav-cta-item a i,
+.mean-container .mean-nav ul li ul li a.nav-btn-apply i {
+    color: #F4C542 !important;
+}
+
+a.nav-btn-apply:hover,
+.header-main .main-menu ul li .submenu li a.nav-btn-apply:hover,
+.header-main .main-menu ul li .submenu li.nav-cta-item a:hover,
+.mean-container .mean-nav ul li ul li a.nav-btn-apply:hover {
+    background: linear-gradient(135deg, #0A4A96 0%, #073B78 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 18px rgba(7, 59, 120, 0.4) !important;
+    transform: translateY(-1px) translateX(2px) !important;
 }

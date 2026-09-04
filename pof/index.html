@@ -164,11 +164,19 @@
                                             <li>
                                                 <a href="../about/">About Us</a>
                                             </li>
-                                            <li class="active">
-                                                <a href="./">Proof of Funds</a>
+                                            <li class="active has-dropdown">
+                                                <a href="./">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="./"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
+                                                    <li><a href="apply/" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
+                                                </ul>
                                             </li>
-                                            <li>
-                                                <a href="../loans/">SME Loans</a>
+                                            <li class="has-dropdown">
+                                                <a href="../loans/">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="../loans/"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
+                                                    <li><a href="../loans/apply/" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
+                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="../partners/">Partnerships</a>
@@ -183,8 +191,8 @@
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="header-button me-3">
-                                <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20need%20embassy-compliant%20Proof%20of%20Funds%20(POF)." target="_blank" class="theme-btn theme-btn-navy" style="padding: 14px 28px; border-radius: 8px;">
-                                    <span>Get POF Now <i class="fab fa-whatsapp ms-1"></i></span>
+                                <a href="apply/" class="theme-btn theme-btn-navy" style="padding: 14px 28px; border-radius: 8px;">
+                                    <span>Apply For POF <i class="fas fa-edit ms-1"></i></span>
                                 </a>
                             </div>
                             <div class="header__hamburger d-lg-none my-auto">
@@ -293,65 +301,28 @@
                                     </div>
                                 </div>
 
-                                <!-- POF Application Form Section -->
-                                <div id="pof-form" class="p-4 p-md-5 mt-5" style="background: #ffffff; border-radius: 14px; border: 2px solid rgba(24, 174, 235, 0.2); box-shadow: 0 12px 36px rgba(7,59,120,0.08);">
-                                    <h3 style="color: var(--navy); font-weight: 800; font-size: 26px; margin-bottom: 8px;">Request Proof of Funds Documentation</h3>
-                                    <p style="color: #64748B; font-size: 14px; margin-bottom: 24px;">
-                                        Fill in your application details below. Our compliance officer will review your file and contact you within 2 hours.
-                                    </p>
-                                    <form action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST">
-                                        <input type="hidden" name="_next" value="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20just%20submitted%20a%20POF%20request%20form.">
-                                        <input type="hidden" name="_subject" value="New POF Request Submission - Bridge Bucks">
-                                        <input type="hidden" name="_captcha" value="false">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Full Name *</label>
-                                                <input type="text" name="name" class="form-control p-3" placeholder="e.g. Adewale Ogundipe" required style="border-radius: 8px;">
+                                <!-- POF Application Portal Callout Card -->
+                                <div id="pof-portal" class="p-4 p-md-5 mt-5" style="background: linear-gradient(135deg, #031830 0%, #073B78 100%); border-radius: 16px; border: 2px solid var(--yellow); box-shadow: 0 16px 40px rgba(7,59,120,0.15); color: #fff;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8 mb-4 mb-lg-0">
+                                            <div class="d-flex align-items-center gap-3 mb-3">
+                                                <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(255,255,255,0.12); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: 24px; border: 1px solid rgba(255,255,255,0.2);"><i class="fas fa-file-invoice"></i></div>
+                                                <span class="badge" style="background: var(--yellow); color: var(--navy); font-weight: 800; padding: 6px 14px; font-size: 13px; border-radius: 20px;">POF Application Portal</span>
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Phone Number / WhatsApp *</label>
-                                                <input type="tel" name="phone" class="form-control p-3" placeholder="+234 800 000 0000" required style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Email Address *</label>
-                                                <input type="email" name="email" class="form-control p-3" placeholder="name@example.com" required style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Target Destination Country *</label>
-                                                <select name="destination" class="form-select p-3" required style="border-radius: 8px; height: auto;">
-                                                    <option value="" selected disabled>Select Destination</option>
-                                                    <option value="Canada">Canada (IRCC Study / PR)</option>
-                                                    <option value="UK">United Kingdom (UKVI Student/Work)</option>
-                                                    <option value="USA">United States (I-20 / F-1)</option>
-                                                    <option value="Schengen">Schengen / Europe</option>
-                                                    <option value="Australia">Australia / New Zealand</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Required POF Amount (Naira) *</label>
-                                                <select name="pof_amount" class="form-select p-3" required style="border-radius: 8px; height: auto;">
-                                                    <option value="" selected disabled>Select Amount Range</option>
-                                                    <option value="5M-10M">₦5 Million - ₦10 Million</option>
-                                                    <option value="10M-20M">₦10 Million - ₦20 Million</option>
-                                                    <option value="20M-35M">₦20 Million - ₦35 Million</option>
-                                                    <option value="35M+">₦35 Million - ₦50 Million+</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Visa Appointment Timeline</label>
-                                                <select name="timeline" class="form-select p-3" style="border-radius: 8px; height: auto;">
-                                                    <option value="Urgent">Urgent (Within 48 Hours)</option>
-                                                    <option value="1-2 Weeks">1 to 2 Weeks</option>
-                                                    <option value="1 Month">Within 1 Month</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 mt-4">
-                                                <button type="submit" class="cta-btn-gold w-100" style="padding: 16px; border-radius: 8px;">
-                                                    Submit Proof of Funds Request <i class="fas fa-paper-plane ms-2"></i>
-                                                </button>
-                                            </div>
+                                            <h3 style="color: #FFFFFF !important; font-weight: 800; font-size: 26px !important; margin-bottom: 10px;">Official POF Application Form</h3>
+                                            <p style="color: #E2E8F0 !important; font-size: 15px !important; line-height: 1.6; margin-bottom: 0;">
+                                                Complete your official Proof of Funds application online (Personal Details, Next of Kin, Amount, and Parallex Bank Account verification) or print out a blank PDF application form.
+                                            </p>
                                         </div>
-                                    </form>
+                                        <div class="col-lg-4 text-lg-end">
+                                            <a href="apply/" class="cta-btn-gold w-100 d-inline-block text-center mb-2" style="padding: 16px 28px; border-radius: 10px; font-weight: 800;">
+                                                Start POF Application <i class="fas fa-arrow-right ms-2"></i>
+                                            </a>
+                                            <a href="apply/" class="btn btn-outline-light w-100 d-inline-block text-center" style="padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600;">
+                                                <i class="fas fa-print me-1"></i> Print Blank PDF Form
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -414,8 +385,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 text-center text-lg-end">
-                            <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20would%20like%20to%20apply%20for%20Proof%20of%20Funds%20(POF)." target="_blank" class="cta-btn-gold">
-                                Apply For POF Now <i class="fab fa-whatsapp ms-1"></i>
+                            <a href="apply/" class="cta-btn-gold">
+                                Apply For POF Online <i class="fas fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </div>
@@ -433,6 +404,7 @@
                                 <a href="../">
                                     <img loading="lazy" decoding="async" src="../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height: 50px;">
                                 </a>
+                                <div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div>
                             </div>
                             <p style="color: #94A3B8; font-size: 14px; line-height: 1.7; margin-bottom: 20px;">
                                 Bridge Bucks Services Ltd is Nigeria's premier provider of legitimate Proof of Funds, SME loans, and B2B agency financial solutions.

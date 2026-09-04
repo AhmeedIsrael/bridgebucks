@@ -643,7 +643,7 @@
       //>> Contact & Application Form Email & WhatsApp Auto-Dispatch <<//
       $('form').on('submit', function(e) {
           var $form = $(this);
-          if ($form.hasClass('search-form')) return; // Ignore search form
+          if ($form.hasClass('search-form') || ($form.attr('action') && $form.attr('action').indexOf('http') === 0)) return; // Ignore search & active endpoint forms (FormSubmit)
           
           var name = $form.find('input[placeholder*="Name"], input[type="text"]:first').val() || 'Client';
           var email = $form.find('input[type="email"]').val() || '';

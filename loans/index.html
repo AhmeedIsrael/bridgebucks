@@ -164,12 +164,20 @@
                                             <li>
                                                 <a href="../about/">About Us</a>
                                             </li>
-                                            <li>
-                                                <a href="../pof/">Proof of Funds</a>
-                                            </li>
-                                            <li class="active">
-                                                <a href="./">SME Loans</a>
-                                            </li>
+                                             <li class="has-dropdown">
+                                                 <a href="../pof/">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
+                                                 <ul class="submenu">
+                                                     <li><a href="../pof/"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
+                                                     <li><a href="../pof/apply/" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
+                                                 </ul>
+                                             </li>
+                                             <li class="active has-dropdown">
+                                                 <a href="./">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
+                                                 <ul class="submenu">
+                                                     <li><a href="./"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
+                                                     <li><a href="apply/" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
+                                                 </ul>
+                                             </li>
                                             <li>
                                                 <a href="../partners/">Partnerships</a>
                                             </li>
@@ -183,8 +191,8 @@
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="header-button me-3">
-                                <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20am%20interested%20in%20an%20SME%20Loan." target="_blank" class="theme-btn theme-btn-navy" style="padding: 14px 28px; border-radius: 8px;">
-                                    <span>Get Loan Now <i class="fab fa-whatsapp ms-1"></i></span>
+                                <a href="apply/" class="theme-btn theme-btn-navy" style="padding: 14px 28px; border-radius: 8px;">
+                                    <span>Apply For Loan <i class="fas fa-edit ms-1"></i></span>
                                 </a>
                             </div>
                             <div class="header__hamburger d-lg-none my-auto">
@@ -301,60 +309,23 @@
                                     </div>
                                 </div>
 
-                                <!-- Loan Application Form Section -->
-                                <div id="loan-form" class="p-4 p-md-5 mt-5" style="background: #ffffff; border-radius: 14px; border: 2px solid rgba(24, 174, 235, 0.2); box-shadow: 0 12px 36px rgba(7,59,120,0.08);">
-                                    <h3 style="color: var(--navy); font-weight: 800; font-size: 26px; margin-bottom: 8px;">Apply For a Loan</h3>
-                                    <p style="color: #64748B; font-size: 14px; margin-bottom: 24px;">
-                                        Complete the application form below. Our loan officers will evaluate your request and issue a feedback response within 2 hours.
+                                <!-- Loan Application Callout Banner -->
+                                <div id="loan-apply-cta" class="p-4 p-md-5 mt-5 text-center" style="background: linear-gradient(135deg, var(--navy) 0%, #031D3D 100%); border-radius: 16px; box-shadow: 0 16px 48px rgba(7,59,120,0.15); color: #ffffff;">
+                                    <div class="icon mb-3 mx-auto" style="width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.15); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: 28px;">
+                                        <i class="fas fa-file-signature"></i>
+                                    </div>
+                                    <h3 style="color: #ffffff !important; font-weight: 800; font-size: 32px; margin-bottom: 12px;">SME Loan Application Portal</h3>
+                                    <p style="color: rgba(255, 255, 255, 0.88) !important; font-size: 17px; max-width: 720px; margin: 0 auto 28px; line-height: 1.7;">
+                                        Apply online with our comprehensive loan application form — featuring Applicant Details, Employment &amp; Financial Information, Guarantor Information, and Loan Agreement Terms — or generate a printable PDF form.
                                     </p>
-                                    <form action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST">
-                                        <input type="hidden" name="_next" value="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20just%20submitted%20a%20Loan%20application.">
-                                        <input type="hidden" name="_subject" value="New SME Loan Application - Bridge Bucks">
-                                        <input type="hidden" name="_captcha" value="false">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Full Name *</label>
-                                                <input type="text" name="name" class="form-control p-3" placeholder="e.g. Chidi Nwachukwu" required style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Business / Company Name</label>
-                                                <input type="text" name="company" class="form-control p-3" placeholder="e.g. Horizon Enterprises Ltd" style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Phone Number / WhatsApp *</label>
-                                                <input type="tel" name="phone" class="form-control p-3" placeholder="+234 800 000 0000" required style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Email Address *</label>
-                                                <input type="email" name="email" class="form-control p-3" placeholder="name@example.com" required style="border-radius: 8px;">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Loan Facility Type *</label>
-                                                <select name="loan_type" class="form-select p-3" required style="border-radius: 8px; height: auto;">
-                                                    <option value="" selected disabled>Select Loan Facility</option>
-                                                    <option value="SME Working Capital">SME Working Capital Loan</option>
-                                                    <option value="Trade Import">Trade &amp; Import Financing</option>
-                                                    <option value="Personal Emergency">Personal Emergency Financing</option>
-                                                    <option value="Equipment">Equipment Asset Financing</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 600; font-size: 14px;">Requested Loan Amount (Naira) *</label>
-                                                <select name="loan_amount" class="form-select p-3" required style="border-radius: 8px; height: auto;">
-                                                    <option value="" selected disabled>Select Amount Range</option>
-                                                    <option value="500K-2M">₦500,000 - ₦2 Million</option>
-                                                    <option value="2M-5M">₦2 Million - ₦5 Million</option>
-                                                    <option value="5M-15M">₦5 Million - ₦15 Million</option>
-                                                    <option value="15M+">₦15 Million - ₦30 Million+</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 mt-4">
-                                                <button type="submit" class="cta-btn-gold w-100" style="padding: 16px; border-radius: 8px;">
-                                                    Submit Loan Application <i class="fas fa-paper-plane ms-2"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                                        <a href="apply/" class="cta-btn-gold" style="padding: 16px 36px; font-size: 17px; font-weight: 800; text-decoration: none;">
+                                            Start Loan Application Form <i class="fas fa-arrow-right ms-2"></i>
+                                        </a>
+                                        <a href="apply/#loan-agreement" class="theme-btn" style="background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.3); color: #ffffff; padding: 16px 30px; font-size: 16px; text-decoration: none;">
+                                            View Loan Terms &amp; Agreement <i class="fas fa-file-contract ms-2"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,8 +388,8 @@
                             </p>
                         </div>
                         <div class="col-lg-4 text-center text-lg-end">
-                            <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20am%20interested%20in%20an%20SME%20Loan." target="_blank" class="cta-btn-gold">
-                                Apply For Loan Now <i class="fab fa-whatsapp ms-1"></i>
+                            <a href="apply/" class="cta-btn-gold">
+                                Apply Online Now <i class="fas fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </div>
@@ -436,6 +407,7 @@
                                 <a href="../">
                                     <img loading="lazy" decoding="async" src="../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height: 50px;">
                                 </a>
+                                <div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div>
                             </div>
                             <p style="color: #94A3B8; font-size: 14px; line-height: 1.7; margin-bottom: 20px;">
                                 Bridge Bucks Services Ltd is Nigeria's premier provider of legitimate Proof of Funds, SME loans, and B2B agency financial solutions.

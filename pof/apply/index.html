@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply online for Proof of Funds (POF) backing with Bridge Bucks Trust International Ltd. Fast processing for study, migration, and business visa applications.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bridgebucks.com.ng/pof/apply/">
+    <title>POF Application Form | Bridge Bucks Trust International Ltd</title>
+    <link rel="shortcut icon" href="../../assets/img/logo/bridgebucks logo.png">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/css/animate.css">
+    <link rel="stylesheet" href="../../assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        :root { --navy: #073B78; --blue: #18AEEB; --yellow: #F4C542; }
+        body { background-color: #F8FAFC; }
+        
+        /* Force display native selects and disable niceSelect overrides */
+        select.bb-select {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            height: auto !important;
+            line-height: normal !important;
+            width: 100% !important;
+            border: 1.5px solid #CBD5E1 !important;
+            border-radius: 8px !important;
+            padding: 12px 44px 12px 14px !important;
+            font-size: 15px !important;
+            color: #1E293B !important;
+            background-color: #FAFBFD !important;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23073B78' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 14px center !important;
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            cursor: pointer !important;
+        }
+        .nice-select { display: none !important; }
+
+        /* Option cards */
+        .apply-option-card {
+            background: #fff;
+            border-radius: 16px;
+            border: 2px solid #E2E8F0;
+            padding: 36px 32px;
+            text-align: center;
+            transition: all .3s ease;
+            height: 100%;
+        }
+        .apply-option-card:hover, .apply-option-card.active {
+            border-color: var(--navy);
+            box-shadow: 0 16px 48px rgba(7,59,120,.12);
+            transform: translateY(-4px);
+        }
+        .apply-option-card .option-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        .apply-option-card h4 {
+            color: var(--navy);
+            font-weight: 800;
+            font-size: 20px !important;
+            margin-bottom: 10px;
+        }
+        .apply-option-card p {
+            color: #64748B;
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+        }
+
+        /* Sticky Interactive Progress Bar */
+        .sticky-progress-container {
+            position: sticky;
+            top: 75px;
+            z-index: 99;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-bottom: 2px solid #E2E8F0;
+            margin-bottom: 35px;
+            padding: 12px 0;
+        }
+        .form-progress {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow-x: auto;
+            padding: 4px 10px;
+            scroll-behavior: smooth;
+        }
+        .progress-step {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #64748B;
+            padding: 8px 14px;
+            border-radius: 30px;
+            transition: all 0.25s ease;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+        .progress-step:hover {
+            background: #F1F5F9;
+            color: var(--navy);
+        }
+        .progress-step.active {
+            background: rgba(7, 59, 120, 0.08);
+            color: var(--navy);
+            font-weight: 700;
+        }
+        .step-dot {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #CBD5E1;
+            color: #475569;
+            font-size: 13px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            flex-shrink: 0;
+        }
+        .progress-step.active .step-dot {
+            background: var(--navy);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(7, 59, 120, 0.3);
+        }
+        .step-label {
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .step-line {
+            height: 2px;
+            flex-grow: 1;
+            background: #E2E8F0;
+            min-width: 15px;
+            margin: 0 4px;
+        }
+
+        /* Distinct Standalone Section Cards */
+        .form-section-card {
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 10px 30px rgba(7, 59, 120, 0.06);
+            overflow: hidden;
+            margin-bottom: 35px;
+            scroll-margin-top: 150px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-section-card:hover {
+            box-shadow: 0 14px 40px rgba(7, 59, 120, 0.1);
+        }
+        .form-section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px 32px;
+            background: linear-gradient(135deg, #031830 0%, #073B78 100%);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            position: relative;
+        }
+        .form-section-header .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #F4C542;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .form-section-header h3,
+        section .form-section-header h3,
+        div.form-section-header h3,
+        .form-section-card .form-section-header h3 {
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            color: #FFFFFF !important;
+            margin: 0 !important;
+            letter-spacing: 0.3px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        .form-section-header p,
+        section .form-section-header p,
+        div.form-section-header p,
+        .form-section-card .form-section-header p {
+            font-size: 14px !important;
+            color: #E2E8F0 !important;
+            margin: 4px 0 0 !important;
+            line-height: 1.4 !important;
+            font-weight: 500 !important;
+        }
+
+        .form-section-header.blue-hdr { border-left: 6px solid #38BDF8; }
+        .form-section-header.green-hdr { border-left: 6px solid #34D399; }
+        .form-section-header.amber-hdr { border-left: 6px solid #FBBF24; }
+        .form-section-header.slate-hdr { border-left: 6px solid #94A3B8; }
+        .form-section-header.purple-hdr { border-left: 6px solid #A78BFA; }
+        .form-section-header.dark-hdr { border-left: 6px solid #60A5FA; }
+        .form-section-header.teal-hdr { border-left: 6px solid #2DD4BF; }
+        .form-section-header:not([class*="-hdr"]) { border-left: 6px solid #F4C542; }
+
+        .form-section-body { padding: 32px; }
+        .bb-label {
+            display: block;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            color: var(--navy) !important;
+            margin-bottom: 6px;
+            letter-spacing: .2px;
+        }
+        .bb-label .req { color: #DC2626; margin-left: 3px; font-weight: 800; }
+        .bb-label .opt { font-size: 12px; font-weight: 600; color: #64748B; margin-left: 6px; font-style: italic; }
+        
+        .bb-input, .bb-textarea {
+            width: 100%;
+            border: 1.5px solid #CBD5E1;
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 15px;
+            color: #1E293B;
+            background: #FAFBFD;
+            transition: border-color .25s, box-shadow .25s;
+            font-family: "Inter", sans-serif;
+        }
+        .bb-input:focus, .bb-select:focus, .bb-textarea:focus {
+            outline: none;
+            border-color: var(--navy) !important;
+            box-shadow: 0 0 0 3px rgba(7,59,120,.1) !important;
+            background: #fff !important;
+        }
+
+        .official-field .bb-input, .official-field .bb-select {
+            background: #F1F5F9 !important;
+            border-style: dashed !important;
+        }
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #FEF3C7;
+            color: #78350F;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid #FDE68A;
+            margin-bottom: 16px;
+        }
+        .field-hint { font-size: 12px; color: #64748B; margin-top: 5px; display: block; font-style: italic; font-weight: 500; }
+        
+        .radio-group, .checkbox-group { display: flex; flex-wrap: wrap; gap: 12px; }
+        .radio-item, .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #F8FAFC;
+            border: 1.5px solid #CBD5E1;
+            border-radius: 8px;
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: all .2s;
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+        }
+        .radio-item input, .checkbox-item input { accent-color: var(--navy); width: 18px; height: 18px; cursor: pointer; }
+        .radio-item:has(input:checked), .checkbox-item:has(input:checked) {
+            border-color: var(--navy);
+            background: rgba(7,59,120,.06);
+            color: var(--navy);
+        }
+
+        /* Section Card Footer Controls */
+        .card-nav-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 32px;
+            background: #F8FAFC;
+            border-top: 1px solid #E2E8F0;
+        }
+        .btn-card-next {
+            background: var(--navy);
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-card-next:hover {
+            background: #031830;
+            color: #fff !important;
+        }
+        .btn-card-back {
+            background: #E2E8F0;
+            color: #334155 !important;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-card-back:hover {
+            background: #CBD5E1;
+            color: #0F172A !important;
+        }
+
+        .btn-submit-pof {
+            background: linear-gradient(135deg, var(--yellow) 0%, #EAB308 100%);
+            color: var(--navy) !important;
+            font-weight: 800;
+            font-size: 17px;
+            padding: 16px 40px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 8px 24px rgba(244,197,66,.35);
+            transition: all .3s;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-submit-pof:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(244,197,66,.5);
+        }
+
+        .info-alert {
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
+            border-radius: 10px;
+            padding: 14px 18px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .info-alert i { color: #2563EB; font-size: 18px; margin-top: 2px; }
+        .info-alert p { color: #1E3A8A; font-size: 13px !important; margin: 0 !important; line-height: 1.5 !important; }
+
+        .declaration-box {
+            background: #F8FAFC;
+            border: 1.5px solid #E2E8F0;
+            border-left: 5px solid var(--navy);
+            border-radius: 10px;
+            padding: 20px 24px;
+        }
+        .declaration-box h5 { color: var(--navy); font-weight: 800; font-size: 16px !important; margin-bottom: 10px; }
+        .declaration-box p { color: #334155; font-size: 14px !important; line-height: 1.7 !important; margin-bottom: 0 !important; }
+
+        .company-header-badge {
+            background: linear-gradient(135deg, #031830 0%, #073B78 100%);
+            color: #fff;
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 12px 32px rgba(7, 59, 120, 0.15);
+        }
+        .company-header-badge h2 {
+            color: #FFFFFF !important;
+            font-size: 26px !important;
+            font-weight: 900 !important;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        .company-header-badge p.tagline {
+            color: #F4C542 !important;
+            font-size: 15px !important;
+            font-style: italic;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .company-header-badge h3.form-title {
+            color: #FFFFFF !important;
+            font-size: 20px !important;
+            font-weight: 800 !important;
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 6px 24px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 0;
+        }
+
+        /* Print styles */
+        @media print {
+            body { background: #fff !important; font-size: 12pt; color: #000; }
+            .header-section-1, .sticky-progress-container, .card-nav-controls, .offcanvas__area, footer, .apply-option-section { display: none !important; }
+            .form-section-card { border: 1px solid #000 !important; box-shadow: none !important; margin-bottom: 20px !important; break-inside: avoid; }
+            .form-section-header { background: #073B78 !important; color: #fff !important; -webkit-print-color-adjust: exact; padding: 12px 20px !important; }
+            .form-section-header h3 { color: #fff !important; font-size: 14pt !important; }
+            .form-section-header p { color: #e2e8f0 !important; font-size: 9pt !important; }
+            .bb-input, .bb-select, .bb-textarea { border: none !important; border-bottom: 1px solid #000 !important; border-radius: 0 !important; background: transparent !important; padding: 4px 0 !important; }
+            .print-header { display: block !important; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px; }
+            .print-sig-line { display: block !important; border-bottom: 1px solid #000; margin-top: 40px; height: 1px; }
+        }
+        @media screen {
+            .print-header { display: none; }
+            .print-sig-line { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="fix-area">
+  <div class="offcanvas__info">
+    <div class="offcanvas__wrapper">
+      <div class="offcanvas__content">
+        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+          <div class="offcanvas__logo"><a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:50px;"></a></div>
+          <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
+        </div>
+        <div class="mobile-menu fix mb-3"></div>
+        <div class="offcanvas__contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-map-marker-alt me-2" style="color: var(--yellow);"></i> Suit B12, Choice Plaza, Challenge, Ibadan</li>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-phone me-2" style="color: var(--yellow);"></i> <a href="tel:+2348067944657">+234 806 794 4657</a></li>
+            <li class="d-flex align-items-center"><i class="fas fa-envelope me-2" style="color: var(--yellow);"></i> <a href="mailto:info.bridgebucks@gmail.com">info.bridgebucks@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas__overlay"></div>
+
+<!-- Header -->
+<header class="header-section-1">
+  <div id="header-sticky" class="header-1"><div class="container-fluid"><div class="mega-menu-wrapper"><div class="header-main">
+    <div class="header-left">
+      <div class="logo"><a href="../../" class="header-logo"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:55px;width:auto;"></a></div>
+      <div class="mean__menu-wrapper"><div class="main-menu"><nav id="mobile-menu"><ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../about/">About Us</a></li>
+        <li class="active has-dropdown">
+          <a href="../">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
+          <ul class="submenu">
+            <li><a href="../"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
+            <li><a href="./" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="../../loans/">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
+          <ul class="submenu">
+            <li><a href="../../loans/"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
+            <li><a href="../../loans/apply/" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
+          </ul>
+        </li>
+        <li><a href="../../partners/">Partnerships</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+      </ul></nav></div></div>
+    </div>
+    <div class="header-right d-flex justify-content-end align-items-center">
+      <div class="header-button me-3"><a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20have%20an%20enquiry%20regarding%20Proof%20of%20Funds." target="_blank" class="theme-btn theme-btn-navy" style="padding:14px 28px;border-radius:8px;"><span>POF Whatsapp <i class="fab fa-whatsapp ms-1"></i></span></a></div>
+      <div class="header__hamburger d-lg-none my-auto"><div class="sidebar__toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div></div>
+    </div>
+  </div></div></div></div>
+</header>
+
+<!-- Breadcrumb Section -->
+<div class="breadcrumb-wrapper bg-cover" style="background-image: url('../../assets/img/breadcrumb.jpg'); padding: 60px 0 40px;">
+  <div class="container">
+    <div class="page-heading">
+      <h1 class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 36px; font-weight: 800; color: #fff;">Proof of Funds (POF) Application Form</h1>
+      <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+        <li><a href="../../">Home</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><a href="../">Proof of Funds</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li style="color: var(--yellow);">Application Form</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Option Selection Section -->
+<section class="apply-option-section fix py-4" style="background: #F1F5F9; border-bottom: 1px solid #E2E8F0;">
+  <div class="container" style="max-width: 1100px;">
+    <div class="row g-3 align-items-center">
+      <div class="col-lg-8">
+        <div class="d-flex align-items-center gap-3">
+          <div style="width: 44px; height: 44px; border-radius: 10px; background: var(--navy); color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;"><i class="fas fa-file-invoice"></i></div>
+          <div>
+            <h5 style="margin: 0; font-weight: 800; color: var(--navy); font-size: 16px !important;">Proof of Funds Application Portal</h5>
+            <p style="margin: 0; font-size: 13px !important; color: #64748B;">Complete the 6-step online form below or download a printable PDF form for physical submission.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <button onclick="window.print()" class="btn btn-outline-primary me-2" style="border-radius: 8px; font-weight: 700; font-size: 13px; padding: 10px 18px;"><i class="fas fa-print me-1"></i> Print Blank Form</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Interactive Progress Bar -->
+<div class="sticky-progress-container">
+  <div class="container" style="max-width: 1140px;">
+    <div class="form-progress" id="formProgressBar">
+      <a href="#section-1" class="progress-step active" data-target="section-1">
+        <span class="step-dot">1</span>
+        <span class="step-label">Personal Details</span>
+      </a>
+      <span class="step-line"></span>
+      <a href="#section-2" class="progress-step" data-target="section-2">
+        <span class="step-dot">2</span>
+        <span class="step-label">Next of Kin</span>
+      </a>
+      <span class="step-line"></span>
+      <a href="#section-3" class="progress-step" data-target="section-3">
+        <span class="step-dot">3</span>
+        <span class="step-label">POF Amount</span>
+      </a>
+      <span class="step-line"></span>
+      <a href="#section-4" class="progress-step" data-target="section-4">
+        <span class="step-dot">4</span>
+        <span class="step-label">Bank Account</span>
+      </a>
+      <span class="step-line"></span>
+      <a href="#section-5" class="progress-step" data-target="section-5">
+        <span class="step-dot">5</span>
+        <span class="step-label">Endorsement</span>
+      </a>
+      <span class="step-line"></span>
+      <a href="#section-6" class="progress-step" data-target="section-6">
+        <span class="step-dot">6</span>
+        <span class="step-label">Verification</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Application Form Section -->
+<section class="main-form-section fix pb-5">
+  <div class="container" style="max-width: 1000px;">
+
+    <!-- Company Official Header Card -->
+    <div class="company-header-badge">
+      <h2 style="color: #FFFFFF !important; font-size: 26px !important; font-weight: 900 !important; letter-spacing: 1px; margin-bottom: 4px; text-transform: uppercase;">BRIDGEBUCKS TRUST INTERNATIONAL LTD.</h2>
+      <p class="tagline" style="color: #F4C542 !important; font-size: 15px !important; font-style: italic; font-weight: 600; margin-bottom: 12px;">&ldquo;...your wealth connection&rdquo;</p>
+      <h3 class="form-title" style="color: #FFFFFF !important; font-size: 18px !important; font-weight: 800 !important; background: rgba(255, 255, 255, 0.15); display: inline-block; padding: 6px 24px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.3); margin: 0;"><i class="fas fa-file-signature me-2"></i>POF APPLICATION FORM</h3>
+    </div>
+
+    <!-- Print Header -->
+    <div class="print-header">
+      <div><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks" style="max-height:48px;"></div>
+      <div class="print-header-title" style="text-align:right;">
+        <h2>BRIDGEBUCKS TRUST INTERNATIONAL LTD.</h2>
+        <p>&ldquo;...your wealth connection&rdquo;</p>
+        <h3>POF APPLICATION FORM</h3>
+        <p>Suit B12, Choice Plaza, Challenge, Ibadan &bull; +234 806 794 4657 &bull; info.bridgebucks@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Main Form HTML -->
+    <form id="pofApplicationForm" action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New POF Application - Bridge Bucks Trust International Ltd">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://bridgebucks.com.ng/pof/apply/thank-you.html">
+      <input type="hidden" name="Form_Type" value="Proof of Funds (POF) Application">
+
+      <!-- SECTION 1: PERSONAL DETAILS -->
+      <div class="form-section-card" id="section-1">
+        <div class="form-section-header">
+          <div class="section-icon"><i class="fas fa-user"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 1: Personal Details</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Personal details of the primary POF applicant</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="bb-label" for="surname">1. Surname <span class="req">*</span></label>
+              <input type="text" id="surname" name="Surname" class="bb-input" placeholder="e.g. Adeyemi" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="firstname">2. First Name <span class="req">*</span></label>
+              <input type="text" id="firstname" name="First_Name" class="bb-input" placeholder="e.g. Oluwafemi" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="middlename">3. Middle Name <span class="opt">Optional</span></label>
+              <input type="text" id="middlename" name="Middle_Name" class="bb-input" placeholder="e.g. Babatunde">
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-8">
+              <label class="bb-label" for="perm_address">4. Permanent Address <span class="req">*</span></label>
+              <input type="text" id="perm_address" name="Permanent_Address" class="bb-input" placeholder="e.g. 15 Ring Road, Ibadan, Oyo State" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="bus_stop">5. Nearest Bus-stop <span class="req">*</span></label>
+              <input type="text" id="bus_stop" name="Nearest_Bus_Stop" class="bb-input" placeholder="e.g. Challenge Bus Stop" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="bb-label" for="tel_number">6. Telephone Number <span class="req">*</span></label>
+              <input type="tel" id="tel_number" name="Telephone_Number" class="bb-input" placeholder="+234 800 000 0000" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="dob">8. Date of Birth <span class="req">*</span></label>
+              <input type="date" id="dob" name="Date_of_Birth" class="bb-input" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label">7. Marital Status <span class="req">*</span></label>
+              <select id="marital_status" name="Marital_Status" class="bb-select" required>
+                <option value="" disabled selected>Select status</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <span style="color:#64748B;font-size:13px;font-weight:600;">Step 1 of 6</span>
+          <a href="#section-2" class="btn-card-next">Next: Next of Kin <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 2: NEXT OF KIN -->
+      <div class="form-section-card" id="section-2">
+        <div class="form-section-header blue-hdr">
+          <div class="section-icon"><i class="fas fa-users"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 2: Next of Kin</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Contact person standing on your behalf</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="bb-label" for="kin_name">9. Name of Next of Kin (Surname First) <span class="req">*</span></label>
+              <input type="text" id="kin_name" name="Next_of_Kin_Name" class="bb-input" placeholder="e.g. Adeyemi, Folashade Mary" required>
+            </div>
+            <div class="col-md-6">
+              <label class="bb-label" for="kin_rel">10. Relationship <span class="req">*</span></label>
+              <select id="kin_rel" name="Next_of_Kin_Relationship" class="bb-select" required>
+                <option value="" disabled selected>Select relationship</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Parent">Parent</option>
+                <option value="Sibling">Sibling</option>
+                <option value="Child">Child</option>
+                <option value="Friend">Friend</option>
+                <option value="Colleague">Colleague</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-5">
+              <label class="bb-label" for="kin_phone">11. Phone No. <span class="req">*</span></label>
+              <input type="tel" id="kin_phone" name="Next_of_Kin_Phone" class="bb-input" placeholder="+234 800 000 0000" required>
+            </div>
+            <div class="col-md-7">
+              <label class="bb-label" for="kin_address">12. Address of Next of Kin <span class="req">*</span></label>
+              <input type="text" id="kin_address" name="Next_of_Kin_Address" class="bb-input" placeholder="Full residential address" required>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-1" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-3" class="btn-card-next">Next: POF Amount Details <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 3: POF AMOUNT DETAILS -->
+      <div class="form-section-card" id="section-3">
+        <div class="form-section-header amber-hdr">
+          <div class="section-icon"><i class="fas fa-coins"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 3: POF Amount Details</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Facility size, duration, and purpose of travel</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="bb-label" for="pof_requested">13. Requested POF Amount (&#8358;) <span class="req">*</span></label>
+              <input type="number" id="pof_requested" name="Requested_POF_Amount" class="bb-input" placeholder="e.g. 15000000" min="100000" required>
+            </div>
+            <div class="col-md-6">
+              <label class="bb-label" for="pof_words">14. Amount in Words <span class="req">*</span></label>
+              <input type="text" id="pof_words" name="Amount_in_Words" class="bb-input" placeholder="e.g. Fifteen Million Naira Only" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <label class="bb-label" for="loan_tenor">15. Loan Tenor <span class="req">*</span></label>
+              <select id="loan_tenor" name="Loan_Tenor" class="bb-select" required>
+                <option value="" disabled selected>Select facility duration</option>
+                <option value="30 Days (1 Month)">30 Days (1 Month)</option>
+                <option value="60 Days (2 Months)">60 Days (2 Months)</option>
+                <option value="90 Days (3 Months)">90 Days (3 Months)</option>
+                <option value="120 Days (4 Months)">120 Days (4 Months)</option>
+                <option value="180 Days (6 Months)">180 Days (6 Months)</option>
+                <option value="Custom Tenor">Custom Tenor</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="interest_rate">16. Interest Rate (%) <span class="req">*</span></label>
+              <input type="text" id="interest_rate" name="Interest_Rate" class="bb-input" placeholder="e.g. 3.5% monthly" required>
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="travel_purpose">17. Purpose of Travel / Facility <span class="req">*</span></label>
+              <select id="travel_purpose" name="Purpose_of_Travel" class="bb-select" required>
+                <option value="" disabled selected>Select purpose</option>
+                <option value="Student Visa / Tuition Proof of Funds">Student Visa / Tuition POF</option>
+                <option value="Canada PR / Express Entry POF">Canada PR / Express Entry</option>
+                <option value="UK Student / Dependant Visa POF">UK Student / Dependant Visa</option>
+                <option value="Schengen Visa Verification">Schengen Visa Verification</option>
+                <option value="USA Student F1 Visa POF">USA Student F1 Visa</option>
+                <option value="Business / Trade Proof of Funds">Business / Trade POF</option>
+                <option value="Other Travel / Migration">Other Travel / Migration</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="official-badge mt-2 mb-3"><i class="fas fa-lock" style="font-size:11px;"></i> Office Use Only &mdash; Filled by Bridge Bucks Trust Credit Team</div>
+          <div class="row g-3 official-field">
+            <div class="col-md-4">
+              <label class="bb-label" for="approved_amt">18. Approved Amt (&#8358;) <span class="opt">Office use</span></label>
+              <input type="number" id="approved_amt" name="Approved_Amount" class="bb-input" placeholder="Filled by credit team">
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="date_issued">19. Date Issued <span class="opt">Office use</span></label>
+              <input type="date" id="date_issued" name="Date_Issued" class="bb-input">
+            </div>
+            <div class="col-md-4">
+              <label class="bb-label" for="interest_upfront">20. Interest Paid Upfront (&#8358;) <span class="opt">Office use</span></label>
+              <input type="number" id="interest_upfront" name="Interest_Paid_Upfront" class="bb-input" placeholder="Upfront fee amount">
+            </div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-2" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-4" class="btn-card-next">Next: Bank Account <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 4: ACCOUNT DETAILS WITH PARALLEX BANK -->
+      <div class="form-section-card" id="section-4">
+        <div class="form-section-header green-hdr">
+          <div class="section-icon"><i class="fas fa-university"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 4: Account Details with Parallex Bank</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Nominated bank account for POF letter backing and verification</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="info-alert mb-4">
+            <i class="fas fa-university"></i>
+            <p><strong>Parallex Bank Account Integration:</strong> POF facilities are issued through our accredited banking partner Parallex Bank. Ensure account name matches your passport ID exactly.</p>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="bb-label" for="acct_name">21. Account Name <span class="req">*</span></label>
+              <input type="text" id="acct_name" name="Account_Name" class="bb-input" placeholder="e.g. Adeyemi Oluwafemi Babatunde" required>
+              <span class="field-hint">Must match your international passport name exactly</span>
+            </div>
+            <div class="col-md-6">
+              <label class="bb-label" for="acct_num">22. Account Number <span class="req">*</span></label>
+              <input type="text" id="acct_num" name="Account_Number" class="bb-input" placeholder="10-digit NUBAN number" maxlength="10" minlength="10" pattern="\d{10}" required>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="bb-label" for="bank_name">23. Bank Name <span class="req">*</span></label>
+              <select id="bank_name" name="Bank_Name" class="bb-select" required>
+                <option value="Parallex Bank" selected>Parallex Bank Ltd</option>
+                <option value="Access Bank">Access Bank</option>
+                <option value="First Bank of Nigeria">First Bank of Nigeria</option>
+                <option value="GTBank">Guaranty Trust Bank (GTBank)</option>
+                <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>
+                <option value="Sterling Bank">Sterling Bank</option>
+                <option value="UBA">United Bank for Africa (UBA)</option>
+                <option value="Wema Bank">Wema Bank</option>
+                <option value="Zenith Bank">Zenith Bank</option>
+                <option value="Other Commercial Bank">Other Commercial Bank</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-3" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-5" class="btn-card-next">Next: Endorsement <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 5: ENDORSEMENT -->
+      <div class="form-section-card" id="section-5">
+        <div class="form-section-header purple-hdr">
+          <div class="section-icon"><i class="fas fa-signature"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 5: Endorsement</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Applicant authorization and electronic signature</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="declaration-box mb-4">
+            <h5><i class="fas fa-shield-alt me-2"></i>Applicant Authorization &amp; Undertaking</h5>
+            <p>I hereby confirm that all information provided in this Proof of Funds (POF) application is true, complete, and accurate. I authorize Bridge Bucks Trust International Ltd and its banking partner Parallex Bank to make all necessary verifications and inquiries regarding my application. I undertake to abide by the terms and conditions governing POF backing facilities.</p>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <label class="bb-label" for="applicant_sig">24. Applicant's Signature (Type Full Name) <span class="req">*</span></label>
+              <input type="text" id="applicant_sig" name="Applicants_Signature" class="bb-input" placeholder="Type your full legal name as E-signature" required>
+              <span class="field-hint">Typing your legal name serves as an official electronic signature.</span>
+              <span class="print-sig-line"></span>
+            </div>
+            <div class="col-md-6">
+              <label class="bb-label" for="app_date">25. Date <span class="req">*</span></label>
+              <input type="date" id="app_date" name="Application_Date" class="bb-input" required>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-4" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-6" class="btn-card-next">Next: Office Verification <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 6: FOR OFFICE USE ONLY -->
+      <div class="form-section-card" id="section-6">
+        <div class="form-section-header dark-hdr">
+          <div class="section-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div>
+            <h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 6: For Office Use Only &amp; Submission</h3>
+            <p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Verification checklist and final application submit</p>
+          </div>
+        </div>
+        <div class="form-section-body">
+          <div class="official-badge mt-1 mb-3"><i class="fas fa-user-check" style="font-size:11px;"></i> Internal Office Verification &amp; Approval</div>
+          <div class="row g-3 official-field mb-4">
+            <div class="col-md-6">
+              <label class="bb-label">26. Documents Complete?</label>
+              <div class="radio-group mt-1">
+                <label class="radio-item"><input type="radio" name="Documents_Complete" value="Yes"> Yes ( )</label>
+                <label class="radio-item"><input type="radio" name="Documents_Complete" value="No"> No ( )</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="bb-label" for="approved_by">27. Approved By <span class="opt">Office use</span></label>
+              <input type="text" id="approved_by" name="Approved_By" class="bb-input" placeholder="Approval officer name &amp; signature">
+            </div>
+          </div>
+
+          <div class="declaration-agree-check mb-4">
+            <label class="checkbox-item" style="width:100%;font-size:14px;">
+              <input type="checkbox" id="agree_terms" name="Agreed_to_Terms" value="Yes - I confirm I have read and agree to POF terms" required>
+              <span>I confirm I have reviewed all 25 details provided above and agree to submit this application to Bridge Bucks Trust International Ltd.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit-pof" id="submitPofBtn">
+            <i class="fas fa-paper-plane me-2"></i> Submit POF Application Now
+          </button>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-5" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <span style="color:#64748B;font-size:13px;font-weight:600;">Final Step</span>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section fix" style="background-color: #031830; color: #94A3B8; padding-top: 60px; padding-bottom: 30px;">
+  <div class="container-fluid" style="max-width: 1400px; padding: 0 30px;">
+    <div class="row g-4 pb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-logo mb-3">
+          <a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height: 48px;"></a>
+          <div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div>
+        </div>
+        <p style="color: #94A3B8; font-size: 14px !important; line-height: 1.6;">Bridge Bucks Trust International Ltd provides reliable Proof of Funds (POF) backing, SME working capital loans, and B2B partner solutions in Nigeria.</p>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5 style="color: #fff; font-weight: 700; margin-bottom: 16px;">Quick Links</h5>
+        <ul class="list-unstyled" style="line-height: 2.2;">
+          <li><a href="../../" style="color: #94A3B8; text-decoration: none;">Home</a></li>
+          <li><a href="../../about/" style="color: #94A3B8; text-decoration: none;">About Us</a></li>
+          <li><a href="../" style="color: #94A3B8; text-decoration: none;">Proof of Funds</a></li>
+          <li><a href="./" style="color: var(--yellow); font-weight:700; text-decoration: none;">Apply For POF</a></li>
+          <li><a href="../../loans/" style="color: #94A3B8; text-decoration: none;">SME Loans</a></li>
+          <li><a href="../../contact/" style="color: #94A3B8; text-decoration: none;">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 style="color: #fff; font-weight: 700; margin-bottom: 16px;">Contact Support</h5>
+        <p style="color: #94A3B8; font-size: 14px !important; margin-bottom: 6px;"><i class="fas fa-map-marker-alt me-2" style="color: var(--yellow);"></i> Suit B12, Choice Plaza, Challenge, Ibadan</p>
+        <p style="color: #94A3B8; font-size: 14px !important; margin-bottom: 6px;"><i class="fas fa-phone me-2" style="color: var(--yellow);"></i> +234 806 794 4657</p>
+        <p style="color: #94A3B8; font-size: 14px !important;"><i class="fas fa-envelope me-2" style="color: var(--yellow);"></i> info.bridgebucks@gmail.com</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 style="color: #fff; font-weight: 700; margin-bottom: 16px;">Parallex Bank POF</h5>
+        <p style="color: #94A3B8; font-size: 13px !important;">All POF accounts and financial verification instruments are backed by Parallex Bank Ltd and audited for embassy compliance.</p>
+      </div>
+    </div>
+    <div class="text-center pt-3">
+      <p style="color: #64748B; font-size: 13px !important; margin: 0;">&copy; 2026 Bridge Bucks Trust International Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- JS Libraries -->
+<script src="../../assets/js/jquery-3.7.1.min.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/jquery.meanmenu.min.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Destroy niceSelect on native dropdowns to enforce HTML5 visibility
+    if ($.fn.niceSelect) {
+      $('select.bb-select').niceSelect('destroy');
+    }
+
+    // Set default date to today
+    const today = new Date().toISOString().split('T')[0];
+    if ($('#app_date').length) $('#app_date').val(today);
+
+    // ScrollSpy & Sticky Progress Tracker
+    const sections = ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'];
+    
+    $(window).on('scroll', function() {
+      const scrollPos = $(window).scrollTop() + 200;
+      
+      sections.forEach(function(secId) {
+        const $sec = $('#' + secId);
+        if ($sec.length) {
+          const top = $sec.offset().top;
+          const bottom = top + $sec.outerHeight();
+          if (scrollPos >= top && scrollPos <= bottom) {
+            $('.progress-step').removeClass('active');
+            $('.progress-step[data-target="' + secId + '"]').addClass('active');
+          }
+        }
+      });
+    });
+
+    // Smooth Jump to Section
+    $('.progress-step, .btn-card-next, .btn-card-back').on('click', function(e) {
+      const target = $(this).attr('href');
+      if (target && target.startsWith('#')) {
+        e.preventDefault();
+        const $target = $(target);
+        if ($target.length) {
+          $('html, body').animate({
+            scrollTop: $target.offset().top - 140
+          }, 400);
+        }
+      }
+    });
+
+    // Form Submission Handler
+    $('#pofApplicationForm').on('submit', function(e) {
+      const $form = $(this);
+      if (!$form[0].checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Find first invalid field and focus/scroll
+        const $firstInvalid = $form.find(':invalid').first();
+        if ($firstInvalid.length) {
+          $('html, body').animate({
+            scrollTop: $firstInvalid.offset().top - 180
+          }, 300, function() {
+            $firstInvalid.focus();
+          });
+        }
+        $form.addClass('was-validated');
+      } else {
+        $('#submitPofBtn').html('<i class="fas fa-spinner fa-spin me-2"></i> Submitting Application...').prop('disabled', true);
+      }
+    });
+  });
+</script>
+</body>
+</html>

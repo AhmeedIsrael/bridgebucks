@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for an SME working capital loan with Bridge Bucks Services Ltd. Submit your application online or download the form to print.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bridgebucks.com.ng/loans/apply/">
+    <title>SME Loan Application | Bridge Bucks Services Ltd</title>
+    <link rel="shortcut icon" href="../../assets/img/logo/bridgebucks logo.png">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/css/animate.css">
+    <link rel="stylesheet" href="../../assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        :root { --navy: #073B78; --blue: #18AEEB; --yellow: #F4C542; }
+        body { background-color: #F8FAFC; }
+        
+        /* Force display native selects and disable niceSelect overrides */
+        select.bb-select {
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            height: auto !important;
+            line-height: normal !important;
+            width: 100% !important;
+            border: 1.5px solid #CBD5E1 !important;
+            border-radius: 8px !important;
+            padding: 12px 44px 12px 14px !important;
+            font-size: 15px !important;
+            color: #1E293B !important;
+            background-color: #FAFBFD !important;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23073B78' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 14px center !important;
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            cursor: pointer !important;
+        }
+        .nice-select { display: none !important; }
+
+        /* Option cards */
+        .apply-option-card {
+            background: #fff;
+            border-radius: 16px;
+            border: 2px solid #E2E8F0;
+            padding: 36px 32px;
+            text-align: center;
+            transition: all .3s ease;
+            height: 100%;
+        }
+        .apply-option-card:hover, .apply-option-card.active {
+            border-color: var(--navy);
+            box-shadow: 0 16px 48px rgba(7,59,120,.12);
+            transform: translateY(-4px);
+        }
+        .apply-option-card .option-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+        .apply-option-card h4 {
+            color: var(--navy);
+            font-weight: 800;
+            font-size: 20px !important;
+            margin-bottom: 10px;
+        }
+        .apply-option-card p {
+            color: #64748B;
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+        }
+
+        /* Sticky Interactive Progress Bar */
+        .sticky-progress-container {
+            position: sticky;
+            top: 75px;
+            z-index: 99;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-bottom: 2px solid #E2E8F0;
+            margin-bottom: 35px;
+            padding: 12px 0;
+        }
+        .form-progress {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow-x: auto;
+            padding: 4px 10px;
+            scroll-behavior: smooth;
+        }
+        .progress-step {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #64748B;
+            padding: 8px 14px;
+            border-radius: 30px;
+            transition: all 0.25s ease;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+        .progress-step:hover {
+            background: #F1F5F9;
+            color: var(--navy);
+        }
+        .progress-step.active {
+            background: rgba(7, 59, 120, 0.08);
+            color: var(--navy);
+            font-weight: 700;
+        }
+        .step-dot {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #CBD5E1;
+            color: #475569;
+            font-size: 13px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            flex-shrink: 0;
+        }
+        .progress-step.active .step-dot {
+            background: var(--navy);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(7, 59, 120, 0.3);
+        }
+        .step-label {
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .step-line {
+            height: 2px;
+            flex-grow: 1;
+            background: #E2E8F0;
+            min-width: 15px;
+            margin: 0 4px;
+        }
+
+        /* Distinct Standalone Section Cards */
+        .form-section-card {
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 10px 30px rgba(7, 59, 120, 0.06);
+            overflow: hidden;
+            margin-bottom: 35px;
+            scroll-margin-top: 150px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-section-card:hover {
+            box-shadow: 0 14px 40px rgba(7, 59, 120, 0.1);
+        }
+        .form-section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px 32px;
+            background: linear-gradient(135deg, #031830 0%, #073B78 100%);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+            position: relative;
+        }
+        .form-section-header .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #F4C542;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .form-section-header h3,
+        section .form-section-header h3,
+        div.form-section-header h3,
+        .form-section-card .form-section-header h3 {
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            color: #FFFFFF !important;
+            margin: 0 !important;
+            letter-spacing: 0.3px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        .form-section-header p,
+        section .form-section-header p,
+        div.form-section-header p,
+        .form-section-card .form-section-header p {
+            font-size: 14px !important;
+            color: #E2E8F0 !important;
+            margin: 4px 0 0 !important;
+            line-height: 1.4 !important;
+            font-weight: 500 !important;
+        }
+
+        .form-section-header.blue-hdr { border-left: 6px solid #38BDF8; }
+        .form-section-header.green-hdr { border-left: 6px solid #34D399; }
+        .form-section-header.amber-hdr { border-left: 6px solid #FBBF24; }
+        .form-section-header.slate-hdr { border-left: 6px solid #94A3B8; }
+        .form-section-header.purple-hdr { border-left: 6px solid #A78BFA; }
+        .form-section-header.dark-hdr { border-left: 6px solid #60A5FA; }
+        .form-section-header.teal-hdr { border-left: 6px solid #2DD4BF; }
+        .form-section-header:not([class*="-hdr"]) { border-left: 6px solid #F4C542; }
+
+        .form-section-body { padding: 32px; }
+        .bb-label {
+            display: block;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            color: var(--navy) !important;
+            margin-bottom: 6px;
+            letter-spacing: .2px;
+        }
+        .bb-label .req { color: #DC2626; margin-left: 3px; font-weight: 800; }
+        .bb-label .opt { font-size: 12px; font-weight: 600; color: #64748B; margin-left: 6px; font-style: italic; }
+        
+        .bb-input, .bb-textarea {
+            width: 100%;
+            border: 1.5px solid #CBD5E1;
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 15px;
+            color: #1E293B;
+            background: #FAFBFD;
+            transition: border-color .25s, box-shadow .25s;
+            font-family: "Inter", sans-serif;
+        }
+        .bb-input:focus, .bb-select:focus, .bb-textarea:focus {
+            outline: none;
+            border-color: var(--navy) !important;
+            box-shadow: 0 0 0 3px rgba(7,59,120,.1) !important;
+            background: #fff !important;
+        }
+
+        .official-field .bb-input, .official-field .bb-select {
+            background: #F1F5F9 !important;
+            border-style: dashed !important;
+        }
+        .official-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #FEF3C7;
+            color: #78350F;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid #FDE68A;
+            margin-bottom: 16px;
+        }
+        .field-hint { font-size: 12px; color: #64748B; margin-top: 5px; display: block; font-style: italic; font-weight: 500; }
+        
+        .radio-group, .checkbox-group { display: flex; flex-wrap: wrap; gap: 12px; }
+        .radio-item, .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #F8FAFC;
+            border: 1.5px solid #CBD5E1;
+            border-radius: 8px;
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: all .2s;
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+        }
+        .radio-item input, .checkbox-item input { accent-color: var(--navy); width: 18px; height: 18px; cursor: pointer; }
+        .radio-item:has(input:checked), .checkbox-item:has(input:checked) {
+            border-color: var(--navy);
+            background: rgba(7,59,120,.06);
+            color: var(--navy);
+        }
+
+        /* Section Card Footer Controls */
+        .card-nav-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 32px;
+            background: #F8FAFC;
+            border-top: 1px solid #E2E8F0;
+        }
+        .btn-card-next {
+            background: var(--navy);
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 10px 22px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .btn-card-next:hover { background: #0A4A96; color: #fff; transform: translateX(2px); }
+        .btn-card-back {
+            background: #E2E8F0;
+            color: #475569;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.25s;
+        }
+        .btn-card-back:hover { background: #CBD5E1; color: #1E293B; }
+
+        .declaration-box { background: linear-gradient(135deg,#EFF6FF 0%,#F0FDF4 100%); border:1.5px solid #BFDBFE; border-radius:12px; padding:28px; margin-bottom:24px; }
+        .declaration-box h5 { color:var(--navy); font-weight:800; font-size:16px!important; margin-bottom:12px; }
+        .declaration-box p { color:#374151; font-size:14px!important; line-height:1.7!important; }
+        
+        .form-action-bar { background:linear-gradient(135deg,var(--navy) 0%,#031D3D 100%); padding:32px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; border-radius:16px; margin-bottom:40px; box-shadow:0 12px 36px rgba(7,59,120,.15); }
+        .form-action-bar p { color:rgba(255,255,255,.8); font-size:14px!important; margin:0!important; }
+        .form-action-bar .action-buttons { display:flex; gap:14px; flex-wrap:wrap; }
+        .btn-submit-loan { background:var(--yellow); color:var(--navy); font-weight:800; font-size:16px; padding:14px 32px; border-radius:8px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:10px; transition:all .3s; text-decoration:none; }
+        .btn-submit-loan:hover { background:#e8b730; transform:translateY(-2px); box-shadow:0 8px 24px rgba(244,197,66,.4); color:var(--navy); }
+        .btn-print-form { background:rgba(255,255,255,.12); color:#fff; font-weight:700; font-size:15px; padding:14px 28px; border-radius:8px; border:1.5px solid rgba(255,255,255,.3); cursor:pointer; display:inline-flex; align-items:center; gap:10px; transition:all .3s; text-decoration:none; }
+        .btn-print-form:hover { background:rgba(255,255,255,.2); transform:translateY(-2px); color:#fff; }
+
+        .info-alert { background:#EFF6FF; border:1px solid #BFDBFE; border-left:4px solid var(--navy); border-radius:8px; padding:14px 18px; margin-bottom:24px; display:flex; gap:12px; align-items:flex-start; }
+        .info-alert i { color:var(--navy); font-size:16px; margin-top:2px; flex-shrink:0; }
+        .info-alert p { color:#1E40AF; font-size:14px!important; margin:0!important; line-height:1.6!important; }
+        .warning-alert { background:#FFFBEB; border:1px solid #FDE68A; border-left:4px solid #D97706; border-radius:8px; padding:14px 18px; margin-bottom:24px; display:flex; gap:12px; align-items:flex-start; }
+        .warning-alert i { color:#D97706; font-size:16px; margin-top:2px; flex-shrink:0; }
+        .warning-alert p { color:#92400E; font-size:14px!important; margin:0!important; line-height:1.6!important; }
+        
+        .checklist-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; }
+        .checklist-item { display:flex; align-items:center; gap:10px; background:#F8FAFC; border:1.5px solid #E2E8F0; border-radius:8px; padding:12px 16px; font-size:14px; font-weight:600; color:#374151; cursor:pointer; transition:all .2s; }
+        .checklist-item input[type="checkbox"] { accent-color:var(--navy); width:18px; height:18px; cursor:pointer; }
+        .checklist-item:has(input:checked) { border-color:#059669; background:#F0FDF4; color:#065F46; }
+
+        .agreement-accordion .accordion-button { background:#fff; color:var(--navy); font-weight:700; font-size:16px; border:none; box-shadow:none; }
+        .agreement-accordion .accordion-button:not(.collapsed) { background:#EFF6FF; color:var(--navy); box-shadow:none; }
+        .agreement-accordion .accordion-item { border:1.5px solid #E2E8F0; border-radius:12px!important; overflow:hidden; margin-bottom:12px; }
+        .agreement-body { padding:24px; background:#FAFBFD; }
+        .agreement-body p, .agreement-body li { color:#374151; font-size:14px!important; line-height:1.75!important; }
+
+        @media print {
+            header, .scroll-up, .fix-area, .offcanvas__overlay, .floating-whatsapp-btn, .breadcrumb-wrapper, .apply-options-section, .sticky-progress-container, .card-nav-controls, .info-alert, .warning-alert, .declaration-agree-check, .form-action-bar, .agreement-section, .cta-chat-section, footer { display:none!important; }
+            body { font-size:11px; color:#000; background:#fff; }
+            .loan-apply-section { padding:0!important; background:#fff!important; }
+            .print-header { display:flex!important; align-items:center; justify-content:space-between; border-bottom:3px solid #073B78; padding-bottom:12px; margin-bottom:20px; }
+            .print-header-title h2 { font-size:18px!important; font-weight:800!important; color:#073B78!important; margin:0!important; }
+            .form-section-card { box-shadow:none!important; border:1px solid #999!important; margin-bottom:20px!important; page-break-inside:avoid; }
+            .form-section-header { background:#073B78!important; -webkit-print-color-adjust:exact; print-color-adjust:exact; color:#fff!important; padding:10px 16px!important; }
+            .bb-input, select.bb-select, .bb-textarea { border:1px solid #ccc!important; background:#fff!important; font-size:12px!important; padding:6px 10px!important; box-shadow:none!important; border-radius:4px!important; min-height:30px; }
+            .bb-label { font-size:11px!important; margin-bottom:3px!important; }
+            .print-sig-line { display:block!important; border-bottom:1.5px solid #333; height:36px; margin-top:4px; }
+            .official-badge { display:none!important; }
+        }
+        .print-header { display:none; }
+        .print-sig-line { display:none; }
+        @media(max-width:768px) {
+            .form-section-header { padding:16px 18px; }
+            .form-section-body { padding:20px 18px; }
+            .form-action-bar { padding:20px 18px; }
+            .step-label { display:none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-up"><svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>
+<div class="fix-area">
+  <div class="offcanvas__info"><div class="offcanvas__wrapper"><div class="offcanvas__content">
+    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+      <div class="offcanvas__logo"><a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:50px;"></a></div>
+      <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
+    </div>
+    <div class="mobile-menu fix mb-3"></div>
+    <div class="offcanvas__contact">
+      <h4>Contact Info</h4>
+      <ul>
+        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div><div class="offcanvas__contact-text"><a href="#">Ibadan, Oyo State, Nigeria</a></div></li>
+        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="fal fa-envelope"></i></div><div class="offcanvas__contact-text"><a href="mailto:info.bridgebucks@gmail.com">info.bridgebucks@gmail.com</a></div></li>
+        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="fal fa-clock"></i></div><div class="offcanvas__contact-text"><a href="#">Mon - Fri, 08:00am - 06:00pm</a></div></li>
+        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div><div class="offcanvas__contact-text"><a href="tel:+2348067944657">+234 806 794 4657</a></div></li>
+      </ul>
+      <div class="header-button mt-4"><a href="https://wa.me/2348067944657" target="_blank" class="theme-btn text-center"><span>Chat on WhatsApp <i class="fab fa-whatsapp"></i></span></a></div>
+    </div>
+  </div></div></div>
+</div>
+<div class="offcanvas__overlay"></div>
+
+<header class="header-section-1">
+  <div id="header-sticky" class="header-1"><div class="container-fluid"><div class="mega-menu-wrapper"><div class="header-main">
+    <div class="header-left">
+      <div class="logo"><a href="../../" class="header-logo"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:55px;width:auto;"></a></div>
+      <div class="mean__menu-wrapper"><div class="main-menu"><nav id="mobile-menu"><ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../about/">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="../../pof/">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
+          <ul class="submenu">
+            <li><a href="../../pof/"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
+            <li><a href="../../pof/apply/" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
+          </ul>
+        </li>
+        <li class="active has-dropdown">
+          <a href="../">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
+          <ul class="submenu">
+            <li><a href="../"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
+            <li><a href="./" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
+          </ul>
+        </li>
+        <li><a href="../../partners/">Partnerships</a></li>
+        <li><a href="../../contact/">Contact</a></li>
+      </ul></nav></div></div>
+    </div>
+    <div class="header-right d-flex justify-content-end align-items-center">
+      <div class="header-button me-3"><a href="https://wa.me/2348067944657" target="_blank" class="theme-btn theme-btn-navy" style="padding:14px 28px;border-radius:8px;"><span>Get POF Now <i class="fab fa-whatsapp ms-1"></i></span></a></div>
+      <div class="header__hamburger d-lg-none my-auto"><div class="sidebar__toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div></div>
+    </div>
+  </div></div></div></div>
+</header>
+
+<div class="breadcrumb-wrapper section-padding" style="background:linear-gradient(135deg,#073B78 0%,#031D3D 100%);position:relative;">
+  <div class="container"><div class="page-heading text-center">
+    <h1 class="text-white" style="font-weight:800;font-size:42px;">SME Loan Application</h1>
+    <ul class="breadcrumb-items d-flex justify-content-center align-items-center gap-2 mt-3 list-unstyled text-white-50" style="font-size:15px;">
+      <li><a href="../../" class="text-white text-decoration-none">Home</a></li>
+      <li><i class="fas fa-chevron-right ms-1 me-1" style="font-size:12px;color:#F4C542;"></i></li>
+      <li><a href="../" class="text-white text-decoration-none">SME Loans</a></li>
+      <li><i class="fas fa-chevron-right ms-1 me-1" style="font-size:12px;color:#F4C542;"></i></li>
+      <li class="text-white" style="font-weight:600;">Apply Now</li>
+    </ul>
+  </div></div>
+</div>
+
+<!-- OPTIONS -->
+<section class="apply-options-section" style="background:#fff;padding:50px 0 30px;">
+  <div class="container-fluid" style="max-width:1200px;padding:0 30px;">
+    <div class="section-title text-center mb-4">
+      <span class="about-subtitle-badge">Two Ways to Apply</span>
+      <h2 style="color:#073B78;font-weight:800;font-size:38px;">Choose How You'd Like to Submit</h2>
+      <p class="mt-2" style="max-width:680px;margin:0 auto;color:#4B5563;font-size:16px;line-height:1.7;">Complete the form online and it will be emailed directly to our team &mdash; or download a printable PDF, fill it by hand, and deliver or scan it to us.</p>
+    </div>
+    <div class="row g-4 justify-content-center mb-2">
+      <div class="col-lg-5 col-md-6">
+        <div class="apply-option-card active">
+          <div class="option-icon" style="background:rgba(7,59,120,.1);color:#073B78;"><i class="fas fa-laptop"></i></div>
+          <h4>Option 1: Apply Online</h4>
+          <p>Fill in all sections below and click Submit. Your application will be emailed directly to our credit review team.</p>
+          <a href="#section-1" class="btn-submit-loan mt-3 d-inline-flex" style="font-size:14px;padding:10px 22px;">Start Online Form <i class="fas fa-arrow-down"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <div class="apply-option-card">
+          <div class="option-icon" style="background:rgba(244,197,66,.15);color:#92400E;"><i class="fas fa-file-pdf"></i></div>
+          <h4>Option 2: Download &amp; Print</h4>
+          <p>Generate a clean, printer-friendly PDF layout. Fill by hand and submit to our office or scan via WhatsApp.</p>
+          <button onclick="printForm()" class="btn-print-form mt-3" style="background:#073B78;border-color:#073B78;color:#fff;font-size:14px;padding:10px 22px;"><i class="fas fa-print"></i> Print / Save as PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY INTERACTIVE PROGRESS BAR -->
+<div class="sticky-progress-container">
+  <div class="container-fluid" style="max-width:1100px;">
+    <div class="form-progress">
+      <a href="#section-1" class="progress-step active" id="pstep-1"><div class="step-dot">1</div><span class="step-label">Applicant</span></a>
+      <div class="step-line"></div>
+      <a href="#section-2" class="progress-step" id="pstep-2"><div class="step-dot">2</div><span class="step-label">Next of Kin</span></a>
+      <div class="step-line"></div>
+      <a href="#section-3" class="progress-step" id="pstep-3"><div class="step-dot">3</div><span class="step-label">ID</span></a>
+      <div class="step-line"></div>
+      <a href="#section-4" class="progress-step" id="pstep-4"><div class="step-dot">4</div><span class="step-label">Employment</span></a>
+      <div class="step-line"></div>
+      <a href="#section-5" class="progress-step" id="pstep-5"><div class="step-dot">5</div><span class="step-label">Loan</span></a>
+      <div class="step-line"></div>
+      <a href="#section-6" class="progress-step" id="pstep-6"><div class="step-dot">6</div><span class="step-label">Guarantor</span></a>
+      <div class="step-line"></div>
+      <a href="#section-7" class="progress-step" id="pstep-7"><div class="step-dot">7</div><span class="step-label">Checklist</span></a>
+      <div class="step-line"></div>
+      <a href="#section-8" class="progress-step" id="pstep-8"><div class="step-dot">8</div><span class="step-label">Declaration</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- FORM CONTAINER -->
+<section style="padding: 10px 0 60px;">
+  <div class="container-fluid" style="max-width:1050px;padding:0 20px;">
+    
+    <div class="print-header">
+      <div><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks" style="max-height:48px;"></div>
+      <div class="print-header-title" style="text-align:right;"><h2>LOAN APPLICATION FORM</h2><p>Bridge Bucks Services Ltd &bull; Ibadan, Oyo State &bull; +234 806 794 4657</p><p>info.bridgebucks@gmail.com</p></div>
+    </div>
+
+    <form id="loanApplicationForm" action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New SME Loan Application - Bridge Bucks Services Ltd">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://bridgebucks.com.ng/loans/apply/thank-you.html">
+      <input type="hidden" name="Form_Type" value="SME Loan Application">
+
+      <!-- SECTION 1: APPLICANT -->
+      <div class="form-section-card" id="section-1">
+        <div class="form-section-header">
+          <div class="section-icon"><i class="fas fa-user"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 1: Applicant Information</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Personal details of the primary loan applicant</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-12"><label class="bb-label">Full Name of Applicant <span class="req">*</span></label></div>
+            <div class="col-md-4"><label class="bb-label" for="surname">Surname <span class="req">*</span></label><input type="text" id="surname" name="Surname" class="bb-input" placeholder="e.g. Adeyemi" required></div>
+            <div class="col-md-4"><label class="bb-label" for="firstname">First Name <span class="req">*</span></label><input type="text" id="firstname" name="First_Name" class="bb-input" placeholder="e.g. Oluwafemi" required></div>
+            <div class="col-md-4"><label class="bb-label" for="middlename">Middle Name <span class="opt">Optional</span></label><input type="text" id="middlename" name="Middle_Name" class="bb-input" placeholder="e.g. Babatunde"></div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-8"><label class="bb-label" for="perm_address">Permanent Address <span class="req">*</span></label><input type="text" id="perm_address" name="Permanent_Address" class="bb-input" placeholder="e.g. 12 Oke-Ado Street, Ibadan" required></div>
+            <div class="col-md-4"><label class="bb-label" for="bus_stop">Nearest Bus Stop <span class="req">*</span></label><input type="text" id="bus_stop" name="Nearest_Bus_Stop" class="bb-input" placeholder="e.g. Challenge Bus Stop" required></div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-4"><label class="bb-label" for="tel_number">Telephone Number <span class="req">*</span></label><input type="tel" id="tel_number" name="Telephone_Number" class="bb-input" placeholder="+234 800 000 0000" required></div>
+            <div class="col-md-4"><label class="bb-label" for="dob">Date of Birth <span class="req">*</span></label><input type="date" id="dob" name="Date_of_Birth" class="bb-input" required></div>
+            <div class="col-md-4"><label class="bb-label" for="num_children">No. of Children <span class="req">*</span></label><input type="number" id="num_children" name="Number_of_Children" class="bb-input" placeholder="0" min="0" required></div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="bb-label">Marital Status <span class="req">*</span></label><div class="radio-group mt-1"><label class="radio-item"><input type="radio" name="Marital_Status" value="Single" required> Single</label><label class="radio-item"><input type="radio" name="Marital_Status" value="Married"> Married</label><label class="radio-item"><input type="radio" name="Marital_Status" value="Divorced"> Divorced</label></div></div>
+            <div class="col-md-6"><label class="bb-label">Gender <span class="req">*</span></label><div class="radio-group mt-1"><label class="radio-item"><input type="radio" name="Gender" value="Male" required> Male</label><label class="radio-item"><input type="radio" name="Gender" value="Female"> Female</label></div></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <span style="color:#94A3B8;font-size:13px;font-weight:600;">Step 1 of 8</span>
+          <a href="#section-2" class="btn-card-next">Next: Next of Kin <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 2: NEXT OF KIN -->
+      <div class="form-section-card" id="section-2">
+        <div class="form-section-header blue-hdr">
+          <div class="section-icon"><i class="fas fa-users"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 2: Next of Kin Information</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Emergency contact person who can be reached on your behalf</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="kin_name">Name of Next of Kin <span class="req">*</span></label><input type="text" id="kin_name" name="Next_of_Kin_Name" class="bb-input" placeholder="Full legal name" required></div>
+            <div class="col-md-6"><label class="bb-label" for="kin_rel">Relationship <span class="req">*</span></label>
+              <select id="kin_rel" name="Next_of_Kin_Relationship" class="bb-select" required>
+                <option value="" disabled selected>Select relationship</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Parent">Parent</option>
+                <option value="Sibling">Sibling</option>
+                <option value="Child">Child</option>
+                <option value="Friend">Friend</option>
+                <option value="Colleague">Colleague</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-7"><label class="bb-label" for="kin_address">Address of Next of Kin <span class="req">*</span></label><input type="text" id="kin_address" name="Next_of_Kin_Address" class="bb-input" placeholder="Full residential address" required></div>
+            <div class="col-md-5"><label class="bb-label" for="kin_phone">Phone Number of Next of Kin <span class="req">*</span></label><input type="tel" id="kin_phone" name="Next_of_Kin_Phone" class="bb-input" placeholder="+234 800 000 0000" required></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-1" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-3" class="btn-card-next">Next: Means of ID <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 3: IDENTIFICATION -->
+      <div class="form-section-card" id="section-3">
+        <div class="form-section-header green-hdr">
+          <div class="section-icon"><i class="fas fa-id-card"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 3: Means of Identification</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Valid government-issued identification details</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="id_type">Means of Identification <span class="req">*</span></label>
+              <select id="id_type" name="ID_Type" class="bb-select" required>
+                <option value="" disabled selected>Select ID document type</option>
+                <option value="International Passport">International Passport</option>
+                <option value="National ID Card (NIN)">National ID Card (NIN Slip / Card)</option>
+                <option value="Driver's Licence">Driver's Licence</option>
+                <option value="Voter's Card (PVC)">Voter's Card (PVC)</option>
+                <option value="Staff ID Card">Staff ID Card</option>
+                <option value="Other">Other Official ID</option>
+              </select>
+            </div>
+            <div class="col-md-6"><label class="bb-label" for="id_num">I.D. Number <span class="req">*</span></label><input type="text" id="id_num" name="ID_Number" class="bb-input" placeholder="e.g. 12345678901" required></div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="bb-label" for="id_issued">I.D. Issued Date <span class="req">*</span></label><input type="date" id="id_issued" name="ID_Issued_Date" class="bb-input" required></div>
+            <div class="col-md-6"><label class="bb-label" for="id_expiry">I.D. Expiry Date <span class="req">*</span></label><input type="date" id="id_expiry" name="ID_Expiry_Date" class="bb-input" required></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-2" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-4" class="btn-card-next">Next: Employment Info <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 4: EMPLOYMENT & FINANCIAL -->
+      <div class="form-section-card" id="section-4">
+        <div class="form-section-header amber-hdr">
+          <div class="section-icon"><i class="fas fa-briefcase"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 4: Employment &amp; Financial Information</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Your work details, salary income, and salary bank account</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="employer_name">Employer's Name <span class="req">*</span></label><input type="text" id="employer_name" name="Employers_Name" class="bb-input" placeholder="e.g. Oyo State Ministry of Education" required></div>
+            <div class="col-md-6"><label class="bb-label" for="year_joined">Year Joined Institution <span class="req">*</span></label><input type="number" id="year_joined" name="Year_Joined_Institution" class="bb-input" placeholder="e.g. 2018" min="1970" max="2030" required></div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-12"><label class="bb-label" for="employer_addr">Employer's Address <span class="req">*</span></label><input type="text" id="employer_addr" name="Employers_Address" class="bb-input" placeholder="Full official address of employer/institution" required></div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="monthly_income">Guaranteed Monthly Income (&#8358;) <span class="req">*</span></label><input type="number" id="monthly_income" name="Guaranteed_Monthly_Income" class="bb-input" placeholder="e.g. 150000" min="0" required></div>
+            <div class="col-md-6"><label class="bb-label" for="existing_loan">Existing Monthly Loan Deductions (&#8358;) <span class="opt">If any</span></label><input type="number" id="existing_loan" name="Existing_Loan_Monthly_Deduction" class="bb-input" placeholder="0 if none" min="0" value="0"></div>
+          </div>
+          <div class="warning-alert"><i class="fas fa-exclamation-triangle"></i><p><strong>Bank Requirement:</strong> Only accounts with CBN-licensed commercial banks are eligible. <strong>Microfinance Banks (MFBs) are strictly not acceptable</strong> for payroll deduction.</p></div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="bb-label" for="bank_name">Salary Bank Name <span class="req">*</span></label>
+              <select id="bank_name" name="Bank_Name" class="bb-select" required>
+                <option value="" disabled selected>Select your commercial bank</option>
+                <option value="Access Bank">Access Bank</option>
+                <option value="Citibank Nigeria">Citibank Nigeria</option>
+                <option value="Ecobank Nigeria">Ecobank Nigeria</option>
+                <option value="Fidelity Bank">Fidelity Bank</option>
+                <option value="First Bank of Nigeria">First Bank of Nigeria</option>
+                <option value="FCMB">First City Monument Bank (FCMB)</option>
+                <option value="Globus Bank">Globus Bank</option>
+                <option value="GTBank">Guaranty Trust Bank (GTBank)</option>
+                <option value="Heritage Bank">Heritage Bank</option>
+                <option value="Keystone Bank">Keystone Bank</option>
+                <option value="Polaris Bank">Polaris Bank</option>
+                <option value="Providus Bank">Providus Bank</option>
+                <option value="Stanbic IBTC Bank">Stanbic IBTC Bank</option>
+                <option value="Standard Chartered">Standard Chartered Bank</option>
+                <option value="Sterling Bank">Sterling Bank</option>
+                <option value="Union Bank">Union Bank of Nigeria</option>
+                <option value="UBA">United Bank for Africa (UBA)</option>
+                <option value="Unity Bank">Unity Bank</option>
+                <option value="Wema Bank">Wema Bank</option>
+                <option value="Zenith Bank">Zenith Bank</option>
+                <option value="Other Commercial Bank">Other Commercial Bank</option>
+              </select>
+            </div>
+            <div class="col-md-6"><label class="bb-label" for="acct_num">10-Digit NUBAN Account Number <span class="req">*</span></label><input type="text" id="acct_num" name="Account_Number" class="bb-input" placeholder="e.g. 0123456789" maxlength="10" minlength="10" pattern="\d{10}" required><span class="field-hint">Must be exactly 10 digits</span></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-3" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-5" class="btn-card-next">Next: Loan Request <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 5: LOAN INFORMATION -->
+      <div class="form-section-card" id="section-5">
+        <div class="form-section-header purple-hdr">
+          <div class="section-icon"><i class="fas fa-hand-holding-usd"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 5: Loan Request Details</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Amount requested, repayment tenor, and purpose of loan</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="loan_amount">Loan Requested Amount (&#8358;) <span class="req">*</span></label><input type="number" id="loan_amount" name="Loan_Requested_Amount" class="bb-input" placeholder="e.g. 500000" min="10000" required></div>
+            <div class="col-md-6"><label class="bb-label" for="tenor">Tenor (Repayment Period) <span class="req">*</span></label>
+              <select id="tenor" name="Tenor" class="bb-select" required>
+                <option value="" disabled selected>Select repayment tenor</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+                <option value="9 Months">9 Months</option>
+                <option value="12 Months">12 Months</option>
+                <option value="18 Months">18 Months</option>
+                <option value="24 Months">24 Months</option>
+                <option value="36 Months">36 Months</option>
+              </select>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-12"><label class="bb-label" for="loan_purpose">Purpose of Loan <span class="req">*</span></label><textarea id="loan_purpose" name="Purpose_of_Loan" class="bb-textarea" rows="3" placeholder="State clearly what the loan will be used for (e.g. SME working capital, inventory, asset purchase)" required></textarea></div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="asset_type">Asset Type &amp; Description <span class="opt">Optional</span></label><input type="text" id="asset_type" name="Asset_Type_Description" class="bb-input" placeholder="e.g. Generator, Commercial vehicle"></div>
+            <div class="col-md-6"><label class="bb-label" for="txn_date">Transaction Date <span class="req">*</span></label><input type="date" id="txn_date" name="Transaction_Date" class="bb-input" required></div>
+          </div>
+
+          <div class="official-badge mt-2 mb-3"><i class="fas fa-lock" style="font-size:11px;"></i> Office Use Only &mdash; Completed by Bridge Bucks Credit Officers</div>
+          <div class="row g-3 official-field">
+            <div class="col-md-4"><label class="bb-label" for="approved_amt">Approved Amount (&#8358;) <span class="opt">Office use</span></label><input type="number" id="approved_amt" name="Approved_Amount" class="bb-input" placeholder="Filled by credit team"></div>
+            <div class="col-md-4"><label class="bb-label" for="monthly_deduct">Monthly Deduction (&#8358;) <span class="opt">Office use</span></label><input type="number" id="monthly_deduct" name="Loan_Monthly_Deduction" class="bb-input" placeholder="Filled by credit team"></div>
+            <div class="col-md-4"><label class="bb-label" for="commence_date">Commencement Date <span class="opt">Office use</span></label><input type="date" id="commence_date" name="Date_Commencement_Deduction" class="bb-input"></div>
+            <div class="col-md-6"><label class="bb-label" for="sold_by">Sold By (BIL Officer) <span class="opt">Office use</span></label><input type="text" id="sold_by" name="Sold_By_BIL" class="bb-input" placeholder="Officer name"></div>
+            <div class="col-md-6"><label class="bb-label" for="approved_by">Approved By <span class="opt">Office use</span></label><input type="text" id="approved_by" name="Approved_By" class="bb-input" placeholder="Approving officer signature name"></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-4" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-6" class="btn-card-next">Next: Guarantor &amp; Witness <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 6: GUARANTOR & WITNESS -->
+      <div class="form-section-card" id="section-6">
+        <div class="form-section-header slate-hdr">
+          <div class="section-icon"><i class="fas fa-handshake"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 6: Guarantor &amp; Witness Information</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Details of guarantor and witness standing for this facility</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="info-alert mb-4"><i class="fas fa-info-circle"></i><p>Your guarantor must be a gainfully employed individual or business owner. Physical signatures are required on printed applications.</p></div>
+          <h5 style="font-weight:700;color:#073B78;font-size:16px!important;margin-bottom:12px;"><i class="fas fa-user-shield me-2"></i>Guarantor Information</h5>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="g_name">Full Name of Guarantor <span class="req">*</span></label><input type="text" id="g_name" name="Guarantor_Name" class="bb-input" placeholder="Guarantor's full name" required></div>
+            <div class="col-md-6"><label class="bb-label" for="g_addr">Guarantor Residential Address <span class="req">*</span></label><input type="text" id="g_addr" name="Guarantor_Address" class="bb-input" placeholder="Full residential address" required></div>
+          </div>
+          <hr style="border-color:#E2E8F0;margin:24px 0;">
+          <h5 style="font-weight:700;color:#073B78;font-size:16px!important;margin-bottom:12px;"><i class="fas fa-user-check me-2"></i>Witness Information</h5>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="w_name">Full Name of Witness <span class="req">*</span></label><input type="text" id="w_name" name="Witness_Name" class="bb-input" placeholder="Witness full name" required></div>
+            <div class="col-md-6"><label class="bb-label" for="w_addr">Witness Residential Address <span class="req">*</span></label><input type="text" id="w_addr" name="Witness_Address" class="bb-input" placeholder="Full residential address" required></div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="bb-label">Signature of Witness</label><div class="bb-input" style="color:#94A3B8;font-size:13px;"><i class="fas fa-pen me-2"></i>Physical signature on printed form</div><span class="print-sig-line"></span></div>
+            <div class="col-md-6"><label class="bb-label">Signature of Guarantor</label><div class="bb-input" style="color:#94A3B8;font-size:13px;"><i class="fas fa-pen me-2"></i>Physical signature on printed form</div><span class="print-sig-line"></span></div>
+            <div class="col-md-6"><label class="bb-label">Director's Signature</label><div class="bb-input" style="color:#94A3B8;font-size:13px;"><i class="fas fa-pen me-2"></i>Bridge Bucks Director (office use)</div><span class="print-sig-line"></span></div>
+            <div class="col-md-6"><label class="bb-label">Fix Postage Stamp</label><div class="bb-input" style="color:#94A3B8;font-size:13px;"><i class="fas fa-stamp me-2"></i>Affix postage stamp on printed form</div></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-5" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-7" class="btn-card-next">Next: Document Checklist <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 7: CHECKLIST -->
+      <div class="form-section-card" id="section-7">
+        <div class="form-section-header dark-hdr">
+          <div class="section-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 7: Document Checklist &amp; Enclosures</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Tick which supporting documents you are attaching</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="info-alert mb-4"><i class="fas fa-paperclip"></i><p>For online submissions, our credit team will contact you to collect document attachments via email or WhatsApp.</p></div>
+          <label class="bb-label mb-3">Documents Enclosed / To Be Submitted <span class="opt">Tick all that apply</span></label>
+          <div class="checklist-grid mb-4">
+            <label class="checklist-item"><input type="checkbox" name="Doc_ID_Card" value="Yes"><i class="fas fa-id-card" style="color:#073B78;"></i> Valid ID Card</label>
+            <label class="checklist-item"><input type="checkbox" name="Doc_Pay_Slip" value="Yes"><i class="fas fa-file-invoice-dollar" style="color:#073B78;"></i> Recent Pay Slip</label>
+            <label class="checklist-item"><input type="checkbox" name="Doc_Letter_Intro" value="Yes"><i class="fas fa-envelope-open-text" style="color:#073B78;"></i> Letter of Introduction</label>
+            <label class="checklist-item"><input type="checkbox" name="Doc_Letter_Employment" value="Yes"><i class="fas fa-file-signature" style="color:#073B78;"></i> Letter of Employment</label>
+          </div>
+
+          <div class="official-badge mt-2 mb-3"><i class="fas fa-lock" style="font-size:11px;"></i> FIL &mdash; Office Verification Record</div>
+          <div class="row g-3 official-field">
+            <div class="col-md-4"><label class="bb-label" for="fil_name">FIL Officer Name <span class="opt">Office use</span></label><input type="text" id="fil_name" name="FIL_Name" class="bb-input" placeholder="FIL officer name"></div>
+            <div class="col-md-4"><label class="bb-label" for="fil_date">FIL Verification Date <span class="opt">Office use</span></label><input type="date" id="fil_date" name="FIL_Date" class="bb-input"></div>
+            <div class="col-md-4"><label class="bb-label" for="official_comment">Official Remarks <span class="opt">Office use</span></label><input type="text" id="official_comment" name="Official_Comment" class="bb-input" placeholder="Internal verification comment"></div>
+          </div>
+        </div>
+        <div class="card-nav-controls">
+          <a href="#section-6" class="btn-card-back"><i class="fas fa-arrow-left"></i> Back</a>
+          <a href="#section-8" class="btn-card-next">Next: Declaration &amp; Submit <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- SECTION 8: DECLARATION -->
+      <div class="form-section-card" id="section-8">
+        <div class="form-section-header teal-hdr">
+          <div class="section-icon"><i class="fas fa-file-contract"></i></div>
+          <div><h3 style="color: #FFFFFF !important; font-size: 22px !important; font-weight: 800 !important; margin: 0 !important;">Section 8: Declaration &amp; Submission</h3><p style="color: #F8FAFC !important; font-size: 14px !important; margin: 4px 0 0 !important;">Review the legal declaration and submit your application</p></div>
+        </div>
+        <div class="form-section-body">
+          <div class="declaration-box mb-4">
+            <h5><i class="fas fa-quote-left me-2" style="color:#073B78;opacity:.4;"></i>Applicant's Declaration</h5>
+            <p>I/We hereby declare that the information given above is true and accurate to the best of my/our knowledge. I/We authorise Bridge Bucks Services Ltd to verify any or all of the above information and to make any enquiries it deems necessary for the purpose of this application. I/We agree that Bridge Bucks Services Ltd shall be authorised to access my salary account or payroll for the purpose of recovering loan repayments and other amounts due under any loan facility granted.</p>
+            <p class="mt-2">I also declare that I do not have any pending loan obligation to any other financial institution without the written consent of Bridge Bucks Services Ltd, and undertake that under no condition shall I obtain any payroll-deductible loan without the written consent of Bridge Bucks Services Ltd for the duration of this loan.</p>
+            <p class="mt-2">I confirm I will produce clearance of non-indebtedness from Bridge Bucks Services Ltd to enable my Pension Managers process my gratuity/terminal benefits. I authorise my employer to deduct monthly instalments from my salary until the loan has been fully paid, and to recover any outstanding instalments against my terminal dues in the event of termination of employment, resignation, retirement, or death before the loan is fully recovered.</p>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-6"><label class="bb-label" for="applicant_sig_name">Applicant's Full Name (as E-Signature) <span class="req">*</span></label><input type="text" id="applicant_sig_name" name="Applicants_Full_Name_Signature" class="bb-input" placeholder="Type your full legal name" required><span class="field-hint">Typing your full legal name acts as your electronic signature.</span><span class="print-sig-line"></span></div>
+            <div class="col-md-6"><label class="bb-label" for="applicant_sig_date">Date of Application <span class="req">*</span></label><input type="date" id="applicant_sig_date" name="Applicants_Signature_Date" class="bb-input" required></div>
+          </div>
+
+          <div class="declaration-agree-check mb-2">
+            <label class="checkbox-item" style="width:100%;font-size:14px;">
+              <input type="checkbox" id="agree_terms" name="Agreed_to_Terms" value="Yes - I confirm I have read and agree to the terms" required>
+              <span>I confirm I have read and understood the declaration above, and I agree to the <a href="#loan-agreement" style="color:#073B78;font-weight:700;">Loan Agreement Terms</a> set out by Bridge Bucks Services Ltd.</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTION BAR -->
+      <div class="form-action-bar">
+        <div>
+          <p><i class="fas fa-shield-alt me-2"></i><strong>Encrypted Email Transmission</strong> &mdash; Direct to credit officers.</p>
+          <p class="mt-1"><i class="fas fa-envelope me-2"></i>Submissions go to: <strong>info.bridgebucks@gmail.com</strong></p>
+        </div>
+        <div class="action-buttons">
+          <button type="button" onclick="printForm()" class="btn-print-form"><i class="fas fa-print"></i> Print / Save as PDF</button>
+          <button type="submit" class="btn-submit-loan" id="submitBtn">Submit Application <i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- LOAN AGREEMENT ACCORDION -->
+<section class="agreement-section section-padding" id="loan-agreement" style="background:#F8FAFC;padding: 60px 0;">
+  <div class="container-fluid" style="max-width:1050px;padding:0 20px;">
+    <div class="section-title text-center mb-5">
+      <span class="about-subtitle-badge">Legal Terms</span>
+      <h2 style="color:#073B78;font-weight:800;font-size:38px;">Loan Agreement Terms &amp; Conditions</h2>
+      <p class="mt-3" style="max-width:680px;margin:0 auto;color:#4B5563;font-size:16px;line-height:1.8;">The following is the binding agreement between Bridge Bucks Services Ltd and the Borrower. Click each section to read details.</p>
+    </div>
+    <div class="accordion agreement-accordion" id="loanAgreementAccordion">
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1"><i class="fas fa-file-alt me-3" style="color:#18AEEB;"></i> 1. The Loan</button></h2>
+        <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p><strong>1.1</strong> Bridge Bucks Services Ltd agrees to make available to the Borrower the loan amounts shown overleaf on the terms and conditions set out in this agreement.</p>
+          <p><strong>1.2</strong> The details of the loan are as printed on the schedule overleaf.</p>
+          <p><strong>1.3</strong> The loan amount shall be made available by Bankers Cheque, cash, or e-transfer for collection at this office and/or direct payment into the Borrower's account with a designated bank.</p>
+          <p><strong>1.4</strong> The Borrower will acknowledge receipt of the loan by signing this document or by imprinting his or her left thumb on this document.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2"><i class="fas fa-percentage me-3" style="color:#18AEEB;"></i> 2. Interest</button></h2>
+        <div id="c2" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p>Bridge Bucks Services Ltd will charge interest on the loan amount at the agreed rate per month, fixed for the period of the loan. If the Borrower fails to pay any amount owing on the due date, Bridge Bucks Services Ltd shall be entitled to charge interest on the unpaid amount at the same rate as stated in this clause.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3"><i class="fas fa-calendar-check me-3" style="color:#18AEEB;"></i> 3. Payment</button></h2>
+        <div id="c3" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p><strong>3.1</strong> The Borrower must repay the loan as shown overleaf.</p>
+          <p><strong>3.2</strong> The Borrower agrees that Bridge Bucks Services Ltd shall have the right to deduct monthly instalments directly from the Borrower's salary as a deduction from his or her employer's payroll.</p>
+          <p><strong>3.3</strong> The Borrower will be required to credit or pay cash into Bridge Bucks Services Ltd's designated account in case of skipped or omitted deduction(s) when contacted or informed.</p>
+          <p><strong>3.4</strong> Bridge Bucks Services Ltd can use money paid by the Borrower to first cover legal and other costs, then the actual loan amount.</p>
+          <p><strong>3.5</strong> Penal charges may apply on pre-liquidated loans: <strong>10% at 1 month</strong> and <strong>7.5% from the 2nd month</strong> irrespective of loan tenure.</p>
+          <p><strong>3.6</strong> In the event of the Borrower's death or permanent disability, the Borrower's estate will be liable for any outstanding balance, limited to terminal benefit/gratuity or any entitlement from the employer (if any).</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4"><i class="fas fa-gavel me-3" style="color:#18AEEB;"></i> 4. Costs and Charges</button></h2>
+        <div id="c4" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p>The Borrower agrees that if Bridge Bucks Services Ltd has to use lawyers, Debt Recovery Agents, and/or other Consultants because the Borrower has not carried out any part of this agreement, the Borrower will pay to Bridge Bucks Services Ltd all costs incurred.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5"><i class="fas fa-exclamation-circle me-3" style="color:#EF4444;"></i> 5. Breach</button></h2>
+        <div id="c5" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p><strong>5.1</strong> Any failure by the Borrower to pay any amount owing in full and on the due date shall make the full balance, together with penalty interest and all other charges, immediately due and payable to Bridge Bucks Services Ltd.</p>
+          <p><strong>5.2</strong> Penalty interest charged shall not exceed the maximum allowable rate per applicable regulations on overdue amounts.</p>
+          <p><strong>5.3</strong> The amount owed at any time may be shown by a certificate signed by a Bridge Bucks Services Ltd officer. This certificate will serve as proof of the amount owed and will be accepted as correct in any legal proceedings unless the Borrower proves otherwise.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6"><i class="fas fa-handshake me-3" style="color:#18AEEB;"></i> 6. Other Obligations</button></h2>
+        <div id="c6" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p>I hereby declare that I do not have a pending loan obligation to any other financial institution, and undertake that under no condition shall I obtain any payroll-deductible loan without the written consent of Bridge Bucks Services Ltd for the duration of this loan.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7"><i class="fas fa-scroll me-3" style="color:#18AEEB;"></i> 7. General Provisions</button></h2>
+        <div id="c7" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p><strong>7.1</strong> This agreement is the whole agreement between Bridge Bucks Services Ltd and the Borrower. It cannot be changed unless the change is put in writing and signed by both parties.</p>
+          <p><strong>7.2</strong> The Borrower agrees not to change his or her specified/nominated bank account for the duration of this agreement.</p>
+          <p><strong>7.3</strong> Bridge Bucks Services Ltd will provide the Borrower, upon request, with a statement of all deductions, the outstanding balance, and any amounts in arrears.</p>
+          <p><strong>7.4</strong> The Borrower authorises Bridge Bucks Services Ltd to access any information available to assess the application, and to register account details with any credit bureau. The Borrower waives any claims in respect of such disclosure.</p>
+          <p><strong>7.5</strong> Disbursement is subject to the availability of funds and CBN Regulations.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8"><i class="fas fa-university me-3" style="color:#18AEEB;"></i> 8. Direct Debit Authorization</button></h2>
+        <div id="c8" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <p>The Borrower by signing below agrees to arrange for any amount Bridge Bucks Services Ltd may debit or charge to be debited through the bulk electronic clearing system from an account held at the financial institution identified overleaf, in the event that payroll deduction is omitted.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c9"><i class="fas fa-signature me-3" style="color:#059669;"></i> 9. Attestation</button></h2>
+        <div id="c9" class="accordion-collapse collapse" data-bs-parent="#loanAgreementAccordion"><div class="agreement-body">
+          <div class="declaration-box" style="margin-bottom:0;">
+            <p>I confirm that I have read, understood and agreed to the above terms and conditions. I therefore authorise my employer to deduct monthly instalments from my salary until the loan has been fully paid, and to recover any outstanding instalments against my terminal dues in the event of termination of employment, resignation, voluntary retirement, or death before the loan is fully recovered.</p>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <div class="mt-5 p-4 text-center" style="background:linear-gradient(135deg,#EFF6FF 0%,#F0FDF4 100%);border-radius:16px;border:1px solid #BFDBFE;">
+      <h5 style="color:#073B78;font-weight:800;font-size:18px!important;">Have questions before you apply?</h5>
+      <p style="color:#4B5563;font-size:15px!important;margin:8px 0 20px;">Our credit officers are available Monday to Friday, 8AM to 6PM.</p>
+      <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20have%20a%20question%20about%20the%20SME%20loan%20application." target="_blank" class="btn-submit-loan" style="font-size:14px;padding:12px 26px;text-decoration:none;"><i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-chat-section section-padding py-4">
+  <div class="container"><div class="cta-banner-box"><div class="row align-items-center">
+    <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0"><h2 class="mb-2">Need Proof of Funds Instead?</h2><p class="mb-0">We also provide 100% embassy-compliant, bank-verifiable Proof of Funds for visa applicants and students.</p></div>
+    <div class="col-lg-4 text-center text-lg-end"><a href="../../pof/" class="cta-btn-gold">Explore POF Services <i class="fas fa-chevron-right"></i></a></div>
+  </div></div></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section fix" style="background-color:#031830;color:#94A3B8;padding-top:80px;padding-bottom:40px;">
+  <div class="container-fluid" style="max-width:1400px;padding:0 30px;">
+    <div class="row g-4 pb-5" style="border-bottom:1px solid rgba(255,255,255,.1);">
+      <div class="col-lg-4 col-md-6"><div class="footer-widget"><div class="footer-logo mb-4"><a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks" style="max-height:50px;"></a><div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div></div><p style="color:#94A3B8;font-size:14px;line-height:1.7;">Bridge Bucks Services Ltd is Nigeria's premier provider of legitimate Proof of Funds, SME loans, and B2B agency financial solutions.</p></div></div>
+      <div class="col-lg-4 col-md-6"><div class="footer-widget"><h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:24px;">Quick Navigation</h4><ul class="list-unstyled footer-nav-list row g-2"><li class="col-6"><a href="../../"><i class="fas fa-chevron-right me-1"></i>Home</a></li><li class="col-6"><a href="../../about/"><i class="fas fa-chevron-right me-1"></i>About Us</a></li><li class="col-6"><a href="../../pof/"><i class="fas fa-chevron-right me-1"></i>Proof of Funds</a></li><li class="col-6"><a href="../"><i class="fas fa-chevron-right me-1"></i>SME Loans</a></li><li class="col-6"><a href="../../partners/"><i class="fas fa-chevron-right me-1"></i>Partnerships</a></li><li class="col-6"><a href="../../contact/"><i class="fas fa-chevron-right me-1"></i>Contact Us</a></li></ul></div></div>
+      <div class="col-lg-4 col-md-6"><div class="footer-widget"><h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:24px;">Contact Us</h4><ul class="list-unstyled" style="line-height:2;font-size:14px;"><li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:#18AEEB;"></i>Ibadan, Oyo State, Nigeria</li><li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#18AEEB;"></i><a href="tel:+2348067944657" style="color:inherit;">+234 806 794 4657</a></li><li class="mb-2"><i class="fas fa-envelope me-2" style="color:#18AEEB;"></i><a href="mailto:info.bridgebucks@gmail.com" style="color:inherit;">info.bridgebucks@gmail.com</a></li><li><i class="fas fa-clock me-2" style="color:#18AEEB;"></i>Mon - Fri: 8:00 AM - 6:00 PM</li></ul></div></div>
+    </div>
+    <div class="pt-4 text-center" style="font-size:13px;"><p class="mb-0" style="color:#64748B;">&copy; 2026 Bridge Bucks Services Ltd. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348067944657" target="_blank" class="floating-whatsapp-btn" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-btn-text">Chat on WhatsApp</span></a>
+
+<script src="../../assets/js/jquery-3.7.1.min.js"></script>
+<script src="../../assets/js/viewport.jquery.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/gsap/gsap.js"></script>
+<script src="../../assets/js/gsap/gsap-scroll-trigger.js"></script>
+<script src="../../assets/js/gsap/gsap-split-text.js"></script>
+<script src="../../assets/js/jquery.nice-select.min.js"></script>
+<script src="../../assets/js/jquery.waypoints.js"></script>
+<script src="../../assets/js/jquery.counterup.min.js"></script>
+<script src="../../assets/js/slick.min.js"></script>
+<script src="../../assets/js/swiper-bundle.min.js"></script>
+<script src="../../assets/js/jquery.meanmenu.min.js"></script>
+<script src="../../assets/js/jquery.magnific-popup.min.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/circle-progress.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+<script>
+function printForm() { window.print(); }
+
+// Destroy niceSelect on form selects to preserve native display
+if (typeof $.fn.niceSelect === 'function') {
+    $('select.bb-select').niceSelect('destroy');
+}
+
+// Form validation & submission
+document.getElementById('loanApplicationForm').addEventListener('submit', function(e) {
+    var agree = document.getElementById('agree_terms');
+    if (!agree.checked) {
+        e.preventDefault();
+        agree.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        agree.closest('.checkbox-item').style.borderColor = '#EF4444';
+        agree.closest('.checkbox-item').style.background = '#FEF2F2';
+        alert('Please confirm you have read and agree to the declaration terms before submitting.');
+        return;
+    }
+    var btn = document.getElementById('submitBtn');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+    btn.disabled = true;
+});
+
+// Smooth Scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+        var targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+            var target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    });
+});
+
+// Set default dates
+(function() {
+    var today = new Date().toISOString().split('T')[0];
+    var txn = document.getElementById('txn_date');
+    var sig = document.getElementById('applicant_sig_date');
+    if (txn && !txn.value) txn.value = today;
+    if (sig && !sig.value) sig.value = today;
+})();
+
+// Account number length restriction
+document.getElementById('acct_num').addEventListener('input', function() {
+    this.value = this.value.replace(/\D/g, '').substring(0, 10);
+});
+
+// ScrollSpy to highlight active step in sticky progress bar
+window.addEventListener('scroll', function() {
+    var sections = document.querySelectorAll('.form-section-card');
+    var scrollPos = window.scrollY || document.documentElement.scrollTop;
+    
+    sections.forEach(function(sec, index) {
+        var top = sec.offsetTop - 180;
+        var height = sec.offsetHeight;
+        var stepNum = index + 1;
+        var stepLink = document.getElementById('pstep-' + stepNum);
+        
+        if (scrollPos >= top && scrollPos < top + height) {
+            document.querySelectorAll('.progress-step').forEach(function(el) { el.classList.remove('active'); });
+            if (stepLink) stepLink.classList.add('active');
+        }
+    });
+});
+</script>
+</body>
+</html>
