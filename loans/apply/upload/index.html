@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Upload Portal | Bridge Bucks Services Ltd</title>
+  <meta name="description" content="Upload your completed application form and required supporting documents (Valid ID, Passport Photo, Utility Bill, Signature, NIN Slip, Evidence of Travel) for Bridge Bucks.">
+  <link rel="shortcut icon" href="../../../assets/img/logo/bridgebucks logo.png" type="image/x-icon">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/font-awesome.css">
+  <link rel="stylesheet" href="../../../assets/css/animate.css">
+  <link rel="stylesheet" href="../../../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../../../assets/css/meanmenu.css">
+  <link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../../assets/css/nice-select.css">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+    :root {
+      --navy: #073B78;
+      --navy-dark: #031830;
+      --yellow: #F4C542;
+      --yellow-hover: #E5B632;
+      --slate-bg: #F8FAFC;
+      --border-color: #E2E8F0;
+    }
+
+    body {
+      background-color: var(--slate-bg);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1E293B;
+    }
+
+    .upload-hero {
+      background: linear-gradient(135deg, #073B78 0%, #031830 100%);
+      padding: 60px 0 45px;
+      color: #FFFFFF;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .upload-hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: rgba(244, 197, 66, 0.08);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .upload-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(7, 59, 120, 0.06);
+      padding: 28px;
+      margin-bottom: 24px;
+      transition: all 0.3s ease;
+    }
+
+    .upload-card:hover {
+      box-shadow: 0 14px 40px rgba(7, 59, 120, 0.1);
+    }
+
+    .card-header-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #F1F5F9;
+    }
+
+    .badge-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(7, 59, 120, 0.1);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .doc-dropzone {
+      border: 2px dashed #CBD5E1;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      background: #F8FAFC;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .doc-dropzone:hover {
+      border-color: var(--navy);
+      background: #F0F7FF;
+    }
+
+    .doc-dropzone.has-file {
+      border-color: #10B981;
+      background: #ECFDF5;
+    }
+
+    .doc-dropzone input[type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .file-status-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: #64748B;
+      margin-top: 6px;
+    }
+
+    .doc-dropzone.has-file .file-status-text {
+      color: #065F46;
+    }
+
+    .form-control-custom {
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 15px;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control-custom:focus {
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(7, 59, 120, 0.15);
+      outline: none;
+    }
+
+    .btn-submit-upload {
+      background: linear-gradient(135deg, #F4C542 0%, #E5B632 100%);
+      color: #031830;
+      font-weight: 800;
+      font-size: 17px;
+      padding: 16px 36px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(244, 197, 66, 0.35);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-submit-upload:hover {
+      background: linear-gradient(135deg, #E5B632 0%, #D4A521 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(244, 197, 66, 0.45);
+      color: #031830;
+    }
+
+    .req-star {
+      color: #EF4444;
+      font-weight: bold;
+    }
+
+    .info-notice-box {
+      background: #EFF6FF;
+      border-left: 4px solid var(--navy);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header-section-1">
+    <div id="header-sticky" class="header-1">
+      <div class="container-fluid">
+        <div class="mega-menu-wrapper">
+          <div class="header-main">
+            <div class="header-left">
+              <div class="logo">
+                <a href="../../../" class="header-logo">
+                  <img src="../../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:55px;width:auto;">
+                </a>
+              </div>
+              <div class="mean__menu-wrapper">
+                <div class="main-menu">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li><a href="../../../">Home</a></li>
+                      <li><a href="../../../about/">About Us</a></li>
+                      <li class="has-dropdown">
+                        <a href="../../../pof/">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
+                        <ul class="submenu">
+                          <li><a href="../../../pof/"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
+                          <li><a href="../../../pof/apply/" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
+                        </ul>
+                      </li>
+                      <li class="active has-dropdown">
+                        <a href="../../">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
+                        <ul class="submenu">
+                          <li><a href="../../"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
+                          <li><a href="../" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../partners/">Partnerships</a></li>
+                      <li><a href="../../../contact/">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="header-right d-flex justify-content-end align-items-center">
+              <div class="header-button me-3">
+                <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20want%20to%20submit%20my%20application%20documents." target="_blank" class="theme-btn theme-btn-navy" style="padding:14px 28px;border-radius:8px;">
+                  <span>WhatsApp Support <i class="fab fa-whatsapp ms-1"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="upload-hero">
+    <div class="container" style="max-width: 900px;">
+      <span style="background: rgba(244, 197, 66, 0.2); color: #F4C542; font-size: 12px; font-weight: 800; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; letter-spacing: 1px;">Fast-Track Document Portal</span>
+      <h1 style="color: #FFFFFF !important; font-weight: 900; font-size: 36px; margin: 12px 0 8px;">Upload Completed Form &amp; Documents</h1>
+      <p style="color: #CBD5E1 !important; font-size: 16px; margin: 0 auto; max-width: 700px; line-height: 1.6;">
+        Already downloaded and filled your application form offline? Submit your completed form together with your supporting identity and travel documents directly to our credit review team.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM CONTAINER -->
+  <section style="padding: 40px 0 80px;">
+    <div class="container" style="max-width: 900px;">
+
+      <!-- Notice Box -->
+      <div class="info-notice-box d-flex align-items-start gap-3">
+        <i class="fas fa-shield-alt text-primary fs-3 mt-1"></i>
+        <div>
+          <h5 style="color: var(--navy); font-weight: 800; margin-bottom: 4px;">Secure &amp; Direct Credit Desk Submission</h5>
+          <p style="color: #475569; font-size: 14px; margin: 0; line-height: 1.5;">
+            Accepted Formats: <strong>PDF, JPG, PNG, JPEG</strong> (Up to 25 MB total). Please ensure all text and scanned documents are clear and legible. Need help? Call or WhatsApp <strong>+234 806 794 4657</strong>.
+          </p>
+        </div>
+      </div>
+
+      <form id="docUploadForm" action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
+        <!-- FormSubmit Hidden Settings -->
+        <input type="hidden" name="_subject" value="New Document Package Upload - Bridge Bucks Services Ltd">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://bridgebucks.com.ng/loans/apply/upload/thank-you.html">
+        <input type="hidden" name="Submission_Source" value="Offline Completed Form & Supporting Documents Upload Portal">
+
+        <!-- SECTION 1: APPLICANT IDENTIFICATION -->
+        <div class="upload-card">
+          <div class="card-header-badge">
+            <div class="badge-icon"><i class="fas fa-user-check"></i></div>
+            <div>
+              <h4 style="color: var(--navy); font-weight: 800; font-size: 20px; margin: 0;">1. Applicant Identification</h4>
+              <p style="color: #64748B; font-size: 13px; margin: 0;">Provide your basic contact details so we can match your uploads</p>
+            </div>
+          </div>
+          
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Full Name of Applicant <span class="req-star">*</span></label>
+              <input type="text" name="Full_Name" class="form-control form-control-custom" placeholder="e.g. Adeyemi Oluwafemi Samuel" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Phone / WhatsApp Number <span class="req-star">*</span></label>
+              <input type="tel" name="Phone_Number" class="form-control form-control-custom" placeholder="e.g. 08012345678" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Email Address <span class="req-star">*</span></label>
+              <input type="email" name="Email_Address" class="form-control form-control-custom" placeholder="name@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Facility Service Selected <span class="req-star">*</span></label>
+              <select name="Facility_Service" class="form-control form-control-custom" required style="background-color: #fff;">
+                <option value="SME Working Capital Loan">SME Working Capital Loan</option>
+                <option value="Proof of Funds (POF) Facility">Proof of Funds (POF) Facility</option>
+                <option value="Both POF & SME Loan">Both POF &amp; SME Loan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: REQUIRED DOCUMENTS UPLOAD -->
+        <div class="upload-card">
+          <div class="card-header-badge">
+            <div class="badge-icon"><i class="fas fa-folder-open"></i></div>
+            <div>
+              <h4 style="color: var(--navy); font-weight: 800; font-size: 20px; margin: 0;">2. Required Document Uploads</h4>
+              <p style="color: #64748B; font-size: 13px; margin: 0;">Upload your filled form and each required supporting document</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+
+            <!-- 1. Filled Application Form -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                1. Filled Application Form <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-filled-form">
+                <input type="file" name="Filled_Application_Form" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-filled-form')">
+                <i class="fas fa-file-pdf text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Click to Upload Filled Form</div>
+                <div class="file-status-text">PDF or clear scanned photos of pages</div>
+              </div>
+            </div>
+
+            <!-- 2. Valid ID -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                2. Valid Government ID <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-valid-id">
+                <input type="file" name="Valid_Identity_Document" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-valid-id')">
+                <i class="fas fa-id-card text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Valid ID</div>
+                <div class="file-status-text">Passport, Driver's License, or Voter's Card</div>
+              </div>
+            </div>
+
+            <!-- 3. Passport Photo -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                3. Passport Photograph <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-passport-photo">
+                <input type="file" name="Passport_Photograph" accept=".jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-passport-photo')">
+                <i class="fas fa-user-circle text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Passport Photo</div>
+                <div class="file-status-text">Recent passport photo with light background</div>
+              </div>
+            </div>
+
+            <!-- 4. Utility Bill -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                4. Utility Bill (Proof of Residence) <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-utility-bill">
+                <input type="file" name="Utility_Bill" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-utility-bill')">
+                <i class="fas fa-file-invoice text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Utility Bill</div>
+                <div class="file-status-text">Electricity / Waste bill or Bank Statement address</div>
+              </div>
+            </div>
+
+            <!-- 5. Signature on Plain Paper -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                5. Signature on Plain Paper <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-signature">
+                <input type="file" name="Signature_Sample" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-signature')">
+                <i class="fas fa-signature text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Signature Sample</div>
+                <div class="file-status-text">Clean signature photo on plain white paper</div>
+              </div>
+            </div>
+
+            <!-- 6. NIN Slip -->
+            <div class="col-md-6">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                6. NIN Slip / Digital Card <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-nin-slip">
+                <input type="file" name="NIN_Slip" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-nin-slip')">
+                <i class="fas fa-fingerprint text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload NIN Slip</div>
+                <div class="file-status-text">National Identity Number slip or digital card</div>
+              </div>
+            </div>
+
+            <!-- 7. Evidence of Travel -->
+            <div class="col-12">
+              <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
+                7. Evidence of Travel / Facility Purpose <span class="req-star">*</span>
+              </label>
+              <div class="doc-dropzone" id="dz-travel-evidence">
+                <input type="file" name="Evidence_of_Travel" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-travel-evidence')">
+                <i class="fas fa-plane-departure text-primary fs-2 mb-2"></i>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Evidence of Travel / Purpose</div>
+                <div class="file-status-text">Flight ticket, Admission Letter, Visa, Offer Letter, or Business Invoice</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 3: ADDITIONAL REMARKS & DECLARATION -->
+        <div class="upload-card">
+          <div class="card-header-badge">
+            <div class="badge-icon"><i class="fas fa-check-circle"></i></div>
+            <div>
+              <h4 style="color: var(--navy); font-weight: 800; font-size: 20px; margin: 0;">3. Remarks &amp; Submission</h4>
+              <p style="color: #64748B; font-size: 13px; margin: 0;">Add any special instructions and confirm your submission</p>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Additional Notes / Remarks (Optional)</label>
+            <textarea name="Additional_Notes" class="form-control form-control-custom" rows="3" placeholder="Specify any specific instructions, bank details, or urgent review requests..."></textarea>
+          </div>
+
+          <div class="form-check mb-4" style="background: #F8FAFC; padding: 14px 18px 14px 44px; border-radius: 8px; border: 1px solid #E2E8F0;">
+            <input class="form-check-input" type="checkbox" id="agree_declaration" required style="margin-left: -26px;">
+            <label class="form-check-label" for="agree_declaration" style="font-size: 14px; color: #334155; line-height: 1.5;">
+              I confirm that all uploaded documents are authentic, legible, and belong to the applicant named above for credit processing by <strong>Bridge Bucks Services Ltd</strong>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit-upload" id="submitUploadBtn">
+            <span>Submit Documents to Credit Desk</span>
+            <i class="fas fa-paper-plane ms-1"></i>
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-section fix" style="background-color:#031830;color:#94A3B8;padding-top:60px;padding-bottom:40px;">
+    <div class="container-fluid" style="max-width:1400px;padding:0 30px;">
+      <div class="row g-4 pb-4" style="border-bottom:1px solid rgba(255,255,255,.1);">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget">
+            <div class="footer-logo mb-3">
+              <a href="../../../"><img src="../../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:50px;"></a>
+              <div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div>
+            </div>
+            <p style="color:#94A3B8;font-size:14px;line-height:1.6;">Bridge Bucks Services Ltd is Nigeria's premier provider of legitimate Proof of Funds, SME loans, and B2B agency financial solutions.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget">
+            <h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:20px;">Quick Navigation</h4>
+            <ul class="list-unstyled footer-nav-list row g-2">
+              <li class="col-6"><a href="../../../" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Home</a></li>
+              <li class="col-6"><a href="../../../about/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>About Us</a></li>
+              <li class="col-6"><a href="../../../pof/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Proof of Funds</a></li>
+              <li class="col-6"><a href="../../" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>SME Loans</a></li>
+              <li class="col-6"><a href="../../../partners/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Partnerships</a></li>
+              <li class="col-6"><a href="../../../contact/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-widget">
+            <h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:20px;">Contact Desk</h4>
+            <ul class="list-unstyled" style="line-height:2;font-size:14px;">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:#18AEEB;"></i>Ibadan, Oyo State, Nigeria</li>
+              <li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#18AEEB;"></i><a href="tel:+2348067944657" style="color:inherit;">+234 806 794 4657</a></li>
+              <li class="mb-2"><i class="fas fa-envelope me-2" style="color:#18AEEB;"></i><a href="mailto:info.bridgebucks@gmail.com" style="color:inherit;">info.bridgebucks@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 text-center" style="font-size:13px;"><p class="mb-0" style="color:#64748B;">&copy; 2026 Bridge Bucks Services Ltd. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348067944657" target="_blank" class="floating-whatsapp-btn" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-btn-text">Chat on WhatsApp</span></a>
+
+  <!-- JS Scripts -->
+  <script src="../../../assets/js/jquery-3.7.1.min.js"></script>
+  <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/js/main.js"></script>
+
+  <script>
+    function handleFileSelect(input, dropzoneId) {
+      const dropzone = document.getElementById(dropzoneId);
+      const statusText = dropzone.querySelector('.file-status-text');
+      
+      if (input.files && input.files[0]) {
+        const fileName = input.files[0].name;
+        const fileSizeMB = (input.files[0].size / (1024 * 1024)).toFixed(2);
+        dropzone.classList.add('has-file');
+        statusText.innerHTML = `<i class="fas fa-check-circle me-1" style="color:#10B981;"></i> <strong>${fileName}</strong> (${fileSizeMB} MB)`;
+      } else {
+        dropzone.classList.remove('has-file');
+        statusText.textContent = 'Click or drag file to select';
+      }
+    }
+
+    document.getElementById('docUploadForm').addEventListener('submit', function(e) {
+      const agree = document.getElementById('agree_declaration');
+      if (!agree.checked) {
+        e.preventDefault();
+        alert('Please confirm the declaration checkbox before submitting your documents.');
+        agree.focus();
+        return;
+      }
+
+      const btn = document.getElementById('submitUploadBtn');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Submitting Documents to Credit Desk...';
+      btn.style.opacity = '0.85';
+    });
+  </script>
+</body>
+</html>
