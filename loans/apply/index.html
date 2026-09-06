@@ -336,8 +336,58 @@
         .declaration-box h5 { color:var(--navy); font-weight:800; font-size:16px!important; margin-bottom:12px; }
         .declaration-box p { color:#374151; font-size:14px!important; line-height:1.7!important; }
         
-        .form-action-bar { background:linear-gradient(135deg,var(--navy) 0%,#031D3D 100%); padding:32px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; border-radius:16px; margin-bottom:40px; box-shadow:0 12px 36px rgba(7,59,120,.15); }
-        .form-action-bar p { color:rgba(255,255,255,.8); font-size:14px!important; margin:0!important; }
+        .form-action-bar { 
+            background: linear-gradient(135deg, #031830 0%, #073B78 100%); 
+            padding: 28px 32px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+            border-radius: 16px; 
+            margin-bottom: 40px; 
+            box-shadow: 0 16px 44px rgba(7,59,120,.22); 
+            border: 2px solid #F4C542;
+        }
+        .transmission-info-box {
+            background: #FFFFFF !important;
+            border: 2.5px solid #F4C542 !important;
+            border-radius: 12px !important;
+            padding: 16px 22px !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+        }
+        .transmission-heading {
+            font-size: 16px !important;
+            font-weight: 800 !important;
+            color: #031830 !important;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2px;
+        }
+        .transmission-heading i {
+            color: #073B78 !important;
+        }
+        .transmission-sub {
+            font-size: 14.5px !important;
+            color: #1E293B !important;
+            margin-top: 6px !important;
+            font-weight: 700 !important;
+        }
+        .transmission-sub i {
+            color: #073B78 !important;
+        }
+        .email-highlight {
+            color: #073B78 !important;
+            font-weight: 800 !important;
+            text-decoration: underline !important;
+            background: #FEF3C7 !important;
+            padding: 3px 10px !important;
+            border-radius: 6px !important;
+            border: 1px solid #FDE68A !important;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        .form-action-bar p { color: #FFFFFF !important; font-size: 14px !important; margin: 0 !important; }
         .form-action-bar .action-buttons { display:flex; gap:14px; flex-wrap:wrap; }
         .btn-submit-loan { background:var(--yellow); color:var(--navy); font-weight:800; font-size:16px; padding:14px 32px; border-radius:8px; border:none; cursor:pointer; display:inline-flex; align-items:center; gap:10px; transition:all .3s; text-decoration:none; }
         .btn-submit-loan:hover { background:#e8b730; transform:translateY(-2px); box-shadow:0 8px 24px rgba(244,197,66,.4); color:var(--navy); }
@@ -388,58 +438,9 @@
 <body>
 
 <div class="scroll-up"><svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>
-<div class="fix-area">
-  <div class="offcanvas__info"><div class="offcanvas__wrapper"><div class="offcanvas__content">
-    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-      <div class="offcanvas__logo"><a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:50px;"></a></div>
-      <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
-    </div>
-    <div class="mobile-menu fix mb-3"></div>
-    <div class="offcanvas__contact">
-      <h4>Contact Info</h4>
-      <ul>
-        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div><div class="offcanvas__contact-text"><a href="#">Ibadan, Oyo State, Nigeria</a></div></li>
-        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="fal fa-envelope"></i></div><div class="offcanvas__contact-text"><a href="mailto:info.bridgebucks@gmail.com">info.bridgebucks@gmail.com</a></div></li>
-        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="fal fa-clock"></i></div><div class="offcanvas__contact-text"><a href="#">Mon - Fri, 08:00am - 06:00pm</a></div></li>
-        <li class="d-flex align-items-center"><div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div><div class="offcanvas__contact-text"><a href="tel:+2348067944657">+234 806 794 4657</a></div></li>
-      </ul>
-      <div class="header-button mt-4"><a href="https://wa.me/2348067944657" target="_blank" class="theme-btn text-center"><span>Chat on WhatsApp <i class="fab fa-whatsapp"></i></span></a></div>
-    </div>
-  </div></div></div>
-</div>
-<div class="offcanvas__overlay"></div>
-
-<header class="header-section-1">
-  <div id="header-sticky" class="header-1"><div class="container-fluid"><div class="mega-menu-wrapper"><div class="header-main">
-    <div class="header-left">
-      <div class="logo"><a href="../../" class="header-logo"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks Logo" style="max-height:55px;width:auto;"></a></div>
-      <div class="mean__menu-wrapper"><div class="main-menu"><nav id="mobile-menu"><ul>
-        <li><a href="../../">Home</a></li>
-        <li><a href="../../about/">About Us</a></li>
-        <li class="has-dropdown">
-          <a href="../../pof/">Proof of Funds <i class="fas fa-angle-down ms-1"></i></a>
-          <ul class="submenu">
-            <li><a href="../../pof/"><i class="fas fa-info-circle me-1" style="color: var(--blue);"></i> POF Overview</a></li>
-            <li><a href="../../pof/apply/" class="nav-btn-apply"><i class="fas fa-file-signature me-1"></i> Apply For POF</a></li>
-          </ul>
-        </li>
-        <li class="active has-dropdown">
-          <a href="../">SME Loans <i class="fas fa-angle-down ms-1"></i></a>
-          <ul class="submenu">
-            <li><a href="../"><i class="fas fa-chart-line me-1" style="color: var(--blue);"></i> Overview &amp; Rates</a></li>
-            <li><a href="./" class="nav-btn-apply"><i class="fas fa-edit me-1"></i> Apply Online</a></li>
-          </ul>
-        </li>
-        <li><a href="../../partners/">Partnerships</a></li>
-        <li><a href="../../contact/">Contact</a></li>
-      </ul></nav></div></div>
-    </div>
-    <div class="header-right d-flex justify-content-end align-items-center">
-      <div class="header-button me-3"><a href="https://wa.me/2348067944657" target="_blank" class="theme-btn theme-btn-navy" style="padding:14px 28px;border-radius:8px;"><span>Get POF Now <i class="fab fa-whatsapp ms-1"></i></span></a></div>
-      <div class="header__hamburger d-lg-none my-auto"><div class="sidebar__toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div></div>
-    </div>
-  </div></div></div></div>
-</header>
+<!-- Dynamic Offcanvas & Header Placeholders -->
+<div id="bb-offcanvas-placeholder"></div>
+<div id="bb-header-placeholder" data-root="../../" data-active="loans"></div>
 
 <div class="breadcrumb-wrapper section-padding" style="background:linear-gradient(135deg,#073B78 0%,#031D3D 100%);position:relative;">
   <div class="container"><div class="page-heading text-center">
@@ -482,20 +483,20 @@
     </div>
 
     <!-- Already Downloaded Upload Banner -->
-    <div class="row justify-content-center mt-4">
-      <div class="col-lg-10">
-        <div style="background: linear-gradient(135deg, #073B78 0%, #031830 100%); border-radius: 16px; padding: 24px 32px; color: #FFFFFF; box-shadow: 0 10px 25px rgba(7, 59, 120, 0.25); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-          <div style="flex: 1; min-width: 280px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-              <span style="background: #F4C542; color: #031830; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.5px;">Already Downloaded?</span>
-              <span style="color: #94A3B8; font-size: 13px;"><i class="fas fa-cloud-upload-alt me-1" style="color: #F4C542;"></i> Fast-Track Upload Portal</span>
+    <div class="row justify-content-center my-4 my-md-5">
+      <div class="col-12">
+        <div class="downloaded-upload-banner" style="background: linear-gradient(135deg, #073B78 0%, #031830 100%); border-radius: 20px; padding: 38px 48px; color: #FFFFFF; box-shadow: 0 12px 35px rgba(7, 59, 120, 0.28); border: 1px solid rgba(244, 197, 66, 0.25); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+          <div style="flex: 1; min-width: 290px;">
+            <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+              <span style="background: #F4C542; color: #031830; font-size: 12px; font-weight: 800; text-transform: uppercase; padding: 6px 16px; border-radius: 20px; letter-spacing: 0.5px;">Already Downloaded?</span>
+              <span style="color: #94A3B8; font-size: 14px; font-weight: 600;"><i class="fas fa-cloud-upload-alt me-1" style="color: #F4C542;"></i> Fast-Track Upload Portal</span>
             </div>
-            <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 20px; margin: 0 0 6px;">Upload Your Filled Form &amp; Required Documents Here</h4>
-            <p style="color: #CBD5E1 !important; font-size: 14px; margin: 0; line-height: 1.5;">Have you already downloaded or filled your application form offline? Upload your completed form along with your Valid ID, Passport photo, Utility bill, Signature, NIN slip, and Travel proof here.</p>
+            <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 25px; margin: 0 0 10px; line-height: 1.3;">Upload Your Filled Form &amp; Required Documents Here</h4>
+            <p style="color: #CBD5E1 !important; font-size: 16px; margin: 0; line-height: 1.6;">Have you already downloaded or filled your application form offline? Upload your completed form and documents here.</p>
           </div>
-          <div>
-            <a href="upload/" class="cta-btn-gold" style="white-space: nowrap; padding: 14px 26px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 14px;">
-              <i class="fas fa-file-upload" style="font-size: 16px;"></i> Upload Files Here <i class="fas fa-arrow-right ms-1"></i>
+          <div style="margin-top: 6px;">
+            <a href="upload/" class="cta-btn-gold" style="white-space: nowrap; padding: 16px 32px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; box-shadow: 0 6px 20px rgba(244, 197, 66, 0.3);">
+              <i class="fas fa-file-upload" style="font-size: 18px;"></i> Upload Files Here <i class="fas fa-arrow-right ms-1"></i>
             </a>
           </div>
         </div>
@@ -533,7 +534,7 @@
     
     <div class="print-header">
       <div><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks" style="max-height:48px;"></div>
-      <div class="print-header-title" style="text-align:right;"><h2>LOAN APPLICATION FORM</h2><p>Bridge Bucks Services Ltd &bull; Ibadan, Oyo State &bull; +234 806 794 4657</p><p>info.bridgebucks@gmail.com</p></div>
+      <div class="print-header-title" style="text-align:right;"><h2>LOAN APPLICATION FORM</h2><p>Bridge Bucks Services Ltd &bull; Ibadan, Nigeria &bull; +234 806 794 4657</p><p>info.bridgebucks@gmail.com</p></div>
     </div>
 
     <form id="loanApplicationForm" action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST" novalidate>
@@ -552,18 +553,18 @@
         <div class="form-section-body">
           <div class="row g-3 mb-4">
             <div class="col-12"><label class="bb-label">Full Name of Applicant <span class="req">*</span></label></div>
-            <div class="col-md-4"><label class="bb-label" for="surname">Surname <span class="req">*</span></label><input type="text" id="surname" name="Surname" class="bb-input" placeholder="e.g. Adeyemi" required></div>
-            <div class="col-md-4"><label class="bb-label" for="firstname">First Name <span class="req">*</span></label><input type="text" id="firstname" name="First_Name" class="bb-input" placeholder="e.g. Oluwafemi" required></div>
-            <div class="col-md-4"><label class="bb-label" for="middlename">Middle Name <span class="opt">Optional</span></label><input type="text" id="middlename" name="Middle_Name" class="bb-input" placeholder="e.g. Babatunde"></div>
+            <div class="col-md-4"><label class="bb-label" for="surname">Surname <span class="req">*</span></label><input type="text" id="surname" name="Surname" class="bb-input" required></div>
+            <div class="col-md-4"><label class="bb-label" for="firstname">First Name <span class="req">*</span></label><input type="text" id="firstname" name="First_Name" class="bb-input" required></div>
+            <div class="col-md-4"><label class="bb-label" for="middlename">Middle Name <span class="opt">Optional</span></label><input type="text" id="middlename" name="Middle_Name" class="bb-input"></div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-md-8"><label class="bb-label" for="perm_address">Permanent Address <span class="req">*</span></label><input type="text" id="perm_address" name="Permanent_Address" class="bb-input" placeholder="e.g. 12 Oke-Ado Street, Ibadan" required></div>
-            <div class="col-md-4"><label class="bb-label" for="bus_stop">Nearest Bus Stop <span class="req">*</span></label><input type="text" id="bus_stop" name="Nearest_Bus_Stop" class="bb-input" placeholder="e.g. Challenge Bus Stop" required></div>
+            <div class="col-md-8"><label class="bb-label" for="perm_address">Permanent Address <span class="req">*</span></label><input type="text" id="perm_address" name="Permanent_Address" class="bb-input" required></div>
+            <div class="col-md-4"><label class="bb-label" for="bus_stop">Nearest Bus Stop <span class="req">*</span></label><input type="text" id="bus_stop" name="Nearest_Bus_Stop" class="bb-input" required></div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-md-4"><label class="bb-label" for="tel_number">Telephone Number <span class="req">*</span></label><input type="tel" id="tel_number" name="Telephone_Number" class="bb-input" placeholder="+234 800 000 0000" required></div>
+            <div class="col-md-4"><label class="bb-label" for="tel_number">Telephone Number <span class="req">*</span></label><input type="tel" id="tel_number" name="Telephone_Number" class="bb-input" required></div>
             <div class="col-md-4"><label class="bb-label" for="dob">Date of Birth <span class="req">*</span></label><input type="date" id="dob" name="Date_of_Birth" class="bb-input" required></div>
-            <div class="col-md-4"><label class="bb-label" for="num_children">No. of Children <span class="req">*</span></label><input type="number" id="num_children" name="Number_of_Children" class="bb-input" placeholder="0" min="0" required></div>
+            <div class="col-md-4"><label class="bb-label" for="num_children">No. of Children <span class="req">*</span></label><input type="number" id="num_children" name="Number_of_Children" class="bb-input" min="0" required></div>
           </div>
           <div class="row g-3">
             <div class="col-md-6"><label class="bb-label">Marital Status <span class="req">*</span></label><div class="radio-group mt-1"><label class="radio-item"><input type="radio" name="Marital_Status" value="Single" required> Single</label><label class="radio-item"><input type="radio" name="Marital_Status" value="Married"> Married</label><label class="radio-item"><input type="radio" name="Marital_Status" value="Divorced"> Divorced</label></div></div>
@@ -584,7 +585,7 @@
         </div>
         <div class="form-section-body">
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="kin_name">Name of Next of Kin <span class="req">*</span></label><input type="text" id="kin_name" name="Next_of_Kin_Name" class="bb-input" placeholder="Full legal name" required></div>
+            <div class="col-md-6"><label class="bb-label" for="kin_name">Name of Next of Kin <span class="req">*</span></label><input type="text" id="kin_name" name="Next_of_Kin_Name" class="bb-input" required></div>
             <div class="col-md-6"><label class="bb-label" for="kin_rel">Relationship <span class="req">*</span></label>
               <select id="kin_rel" name="Next_of_Kin_Relationship" class="bb-select" required>
                 <option value="" disabled selected>Select relationship</option>
@@ -599,8 +600,8 @@
             </div>
           </div>
           <div class="row g-3">
-            <div class="col-md-7"><label class="bb-label" for="kin_address">Address of Next of Kin <span class="req">*</span></label><input type="text" id="kin_address" name="Next_of_Kin_Address" class="bb-input" placeholder="Full residential address" required></div>
-            <div class="col-md-5"><label class="bb-label" for="kin_phone">Phone Number of Next of Kin <span class="req">*</span></label><input type="tel" id="kin_phone" name="Next_of_Kin_Phone" class="bb-input" placeholder="+234 800 000 0000" required></div>
+            <div class="col-md-7"><label class="bb-label" for="kin_address">Address of Next of Kin <span class="req">*</span></label><input type="text" id="kin_address" name="Next_of_Kin_Address" class="bb-input" required></div>
+            <div class="col-md-5"><label class="bb-label" for="kin_phone">Phone Number of Next of Kin <span class="req">*</span></label><input type="tel" id="kin_phone" name="Next_of_Kin_Phone" class="bb-input" required></div>
           </div>
         </div>
         <div class="card-nav-controls">
@@ -628,7 +629,7 @@
                 <option value="Other">Other Official ID</option>
               </select>
             </div>
-            <div class="col-md-6"><label class="bb-label" for="id_num">I.D. Number <span class="req">*</span></label><input type="text" id="id_num" name="ID_Number" class="bb-input" placeholder="e.g. 12345678901" required></div>
+            <div class="col-md-6"><label class="bb-label" for="id_num">I.D. Number <span class="req">*</span></label><input type="text" id="id_num" name="ID_Number" class="bb-input" required></div>
           </div>
           <div class="row g-3">
             <div class="col-md-6"><label class="bb-label" for="id_issued">I.D. Issued Date <span class="req">*</span></label><input type="date" id="id_issued" name="ID_Issued_Date" class="bb-input" required></div>
@@ -649,15 +650,15 @@
         </div>
         <div class="form-section-body">
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="employer_name">Employer's Name <span class="req">*</span></label><input type="text" id="employer_name" name="Employers_Name" class="bb-input" placeholder="e.g. Oyo State Ministry of Education" required></div>
-            <div class="col-md-6"><label class="bb-label" for="year_joined">Year Joined Institution <span class="req">*</span></label><input type="number" id="year_joined" name="Year_Joined_Institution" class="bb-input" placeholder="e.g. 2018" min="1970" max="2030" required></div>
+            <div class="col-md-6"><label class="bb-label" for="employer_name">Employer's Name <span class="req">*</span></label><input type="text" id="employer_name" name="Employers_Name" class="bb-input" required></div>
+            <div class="col-md-6"><label class="bb-label" for="year_joined">Year Joined Institution <span class="req">*</span></label><input type="number" id="year_joined" name="Year_Joined_Institution" class="bb-input" min="1970" max="2030" required></div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-12"><label class="bb-label" for="employer_addr">Employer's Address <span class="req">*</span></label><input type="text" id="employer_addr" name="Employers_Address" class="bb-input" placeholder="Full official address of employer/institution" required></div>
+            <div class="col-12"><label class="bb-label" for="employer_addr">Employer's Address <span class="req">*</span></label><input type="text" id="employer_addr" name="Employers_Address" class="bb-input" required></div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="monthly_income">Guaranteed Monthly Income (&#8358;) <span class="req">*</span></label><input type="number" id="monthly_income" name="Guaranteed_Monthly_Income" class="bb-input" placeholder="e.g. 150000" min="0" required></div>
-            <div class="col-md-6"><label class="bb-label" for="existing_loan">Existing Monthly Loan Deductions (&#8358;) <span class="opt">If any</span></label><input type="number" id="existing_loan" name="Existing_Loan_Monthly_Deduction" class="bb-input" placeholder="0 if none" min="0" value="0"></div>
+            <div class="col-md-6"><label class="bb-label" for="monthly_income">Guaranteed Monthly Income (&#8358;) <span class="req">*</span></label><input type="number" id="monthly_income" name="Guaranteed_Monthly_Income" class="bb-input" min="0" required></div>
+            <div class="col-md-6"><label class="bb-label" for="existing_loan">Existing Monthly Loan Deductions (&#8358;) <span class="opt">If any</span></label><input type="number" id="existing_loan" name="Existing_Loan_Monthly_Deduction" class="bb-input" min="0" value="0"></div>
           </div>
           <div class="warning-alert"><i class="fas fa-exclamation-triangle"></i><p><strong>Bank Requirement:</strong> Only accounts with CBN-licensed commercial banks are eligible. <strong>Microfinance Banks (MFBs) are strictly not acceptable</strong> for payroll deduction.</p></div>
           <div class="row g-3">
@@ -687,7 +688,7 @@
                 <option value="Other Commercial Bank">Other Commercial Bank</option>
               </select>
             </div>
-            <div class="col-md-6"><label class="bb-label" for="acct_num">10-Digit NUBAN Account Number <span class="req">*</span></label><input type="text" id="acct_num" name="Account_Number" class="bb-input" placeholder="e.g. 0123456789" maxlength="10" minlength="10" pattern="\d{10}" required><span class="field-hint">Must be exactly 10 digits</span></div>
+            <div class="col-md-6"><label class="bb-label" for="acct_num">10-Digit NUBAN Account Number <span class="req">*</span></label><input type="text" id="acct_num" name="Account_Number" class="bb-input" maxlength="10" minlength="10" pattern="\d{10}" required><span class="field-hint">Must be exactly 10 digits</span></div>
           </div>
         </div>
         <div class="card-nav-controls">
@@ -704,7 +705,7 @@
         </div>
         <div class="form-section-body">
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="loan_amount">Loan Requested Amount (&#8358;) <span class="req">*</span></label><input type="number" id="loan_amount" name="Loan_Requested_Amount" class="bb-input" placeholder="e.g. 500000" min="10000" required></div>
+            <div class="col-md-6"><label class="bb-label" for="loan_amount">Loan Requested Amount (&#8358;) <span class="req">*</span></label><input type="number" id="loan_amount" name="Loan_Requested_Amount" class="bb-input" min="10000" required></div>
             <div class="col-md-6"><label class="bb-label" for="tenor">Tenor (Repayment Period) <span class="req">*</span></label>
               <select id="tenor" name="Tenor" class="bb-select" required>
                 <option value="" disabled selected>Select repayment tenor</option>
@@ -719,20 +720,20 @@
             </div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-12"><label class="bb-label" for="loan_purpose">Purpose of Loan <span class="req">*</span></label><textarea id="loan_purpose" name="Purpose_of_Loan" class="bb-textarea" rows="3" placeholder="State clearly what the loan will be used for (e.g. SME working capital, inventory, asset purchase)" required></textarea></div>
+            <div class="col-12"><label class="bb-label" for="loan_purpose">Purpose of Loan <span class="req">*</span></label><textarea id="loan_purpose" name="Purpose_of_Loan" class="bb-textarea" rows="3" required></textarea></div>
           </div>
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="asset_type">Asset Type &amp; Description <span class="opt">Optional</span></label><input type="text" id="asset_type" name="Asset_Type_Description" class="bb-input" placeholder="e.g. Generator, Commercial vehicle"></div>
+            <div class="col-md-6"><label class="bb-label" for="asset_type">Asset Type &amp; Description <span class="opt">Optional</span></label><input type="text" id="asset_type" name="Asset_Type_Description" class="bb-input"></div>
             <div class="col-md-6"><label class="bb-label" for="txn_date">Transaction Date <span class="req">*</span></label><input type="date" id="txn_date" name="Transaction_Date" class="bb-input" required></div>
           </div>
 
           <div class="official-badge mt-2 mb-3"><i class="fas fa-lock" style="font-size:11px;"></i> Office Use Only &mdash; Completed by Bridge Bucks Credit Officers</div>
           <div class="row g-3 official-field">
-            <div class="col-md-4"><label class="bb-label" for="approved_amt">Approved Amount (&#8358;) <span class="opt">Office use</span></label><input type="number" id="approved_amt" name="Approved_Amount" class="bb-input" placeholder="Filled by credit team"></div>
-            <div class="col-md-4"><label class="bb-label" for="monthly_deduct">Monthly Deduction (&#8358;) <span class="opt">Office use</span></label><input type="number" id="monthly_deduct" name="Loan_Monthly_Deduction" class="bb-input" placeholder="Filled by credit team"></div>
+            <div class="col-md-4"><label class="bb-label" for="approved_amt">Approved Amount (&#8358;) <span class="opt">Office use</span></label><input type="number" id="approved_amt" name="Approved_Amount" class="bb-input"></div>
+            <div class="col-md-4"><label class="bb-label" for="monthly_deduct">Monthly Deduction (&#8358;) <span class="opt">Office use</span></label><input type="number" id="monthly_deduct" name="Loan_Monthly_Deduction" class="bb-input"></div>
             <div class="col-md-4"><label class="bb-label" for="commence_date">Commencement Date <span class="opt">Office use</span></label><input type="date" id="commence_date" name="Date_Commencement_Deduction" class="bb-input"></div>
-            <div class="col-md-6"><label class="bb-label" for="sold_by">Sold By (BIL Officer) <span class="opt">Office use</span></label><input type="text" id="sold_by" name="Sold_By_BIL" class="bb-input" placeholder="Officer name"></div>
-            <div class="col-md-6"><label class="bb-label" for="approved_by">Approved By <span class="opt">Office use</span></label><input type="text" id="approved_by" name="Approved_By" class="bb-input" placeholder="Approving officer signature name"></div>
+            <div class="col-md-6"><label class="bb-label" for="sold_by">Sold By (BIL Officer) <span class="opt">Office use</span></label><input type="text" id="sold_by" name="Sold_By_BIL" class="bb-input"></div>
+            <div class="col-md-6"><label class="bb-label" for="approved_by">Approved By <span class="opt">Office use</span></label><input type="text" id="approved_by" name="Approved_By" class="bb-input"></div>
           </div>
         </div>
         <div class="card-nav-controls">
@@ -751,14 +752,14 @@
           <div class="info-alert mb-4"><i class="fas fa-info-circle"></i><p>Your guarantor must be a gainfully employed individual or business owner. Physical signatures are required on printed applications.</p></div>
           <h5 style="font-weight:700;color:#073B78;font-size:16px!important;margin-bottom:12px;"><i class="fas fa-user-shield me-2"></i>Guarantor Information</h5>
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="g_name">Full Name of Guarantor <span class="req">*</span></label><input type="text" id="g_name" name="Guarantor_Name" class="bb-input" placeholder="Guarantor's full name" required></div>
-            <div class="col-md-6"><label class="bb-label" for="g_addr">Guarantor Residential Address <span class="req">*</span></label><input type="text" id="g_addr" name="Guarantor_Address" class="bb-input" placeholder="Full residential address" required></div>
+            <div class="col-md-6"><label class="bb-label" for="g_name">Full Name of Guarantor <span class="req">*</span></label><input type="text" id="g_name" name="Guarantor_Name" class="bb-input" required></div>
+            <div class="col-md-6"><label class="bb-label" for="g_addr">Guarantor Residential Address <span class="req">*</span></label><input type="text" id="g_addr" name="Guarantor_Address" class="bb-input" required></div>
           </div>
           <hr style="border-color:#E2E8F0;margin:24px 0;">
           <h5 style="font-weight:700;color:#073B78;font-size:16px!important;margin-bottom:12px;"><i class="fas fa-user-check me-2"></i>Witness Information</h5>
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="w_name">Full Name of Witness <span class="req">*</span></label><input type="text" id="w_name" name="Witness_Name" class="bb-input" placeholder="Witness full name" required></div>
-            <div class="col-md-6"><label class="bb-label" for="w_addr">Witness Residential Address <span class="req">*</span></label><input type="text" id="w_addr" name="Witness_Address" class="bb-input" placeholder="Full residential address" required></div>
+            <div class="col-md-6"><label class="bb-label" for="w_name">Full Name of Witness <span class="req">*</span></label><input type="text" id="w_name" name="Witness_Name" class="bb-input" required></div>
+            <div class="col-md-6"><label class="bb-label" for="w_addr">Witness Residential Address <span class="req">*</span></label><input type="text" id="w_addr" name="Witness_Address" class="bb-input" required></div>
           </div>
           <div class="row g-3">
             <div class="col-md-6"><label class="bb-label">Signature of Witness</label><div class="bb-input" style="color:#94A3B8;font-size:13px;"><i class="fas fa-pen me-2"></i>Physical signature on printed form</div><span class="print-sig-line"></span></div>
@@ -791,9 +792,9 @@
 
           <div class="official-badge mt-2 mb-3"><i class="fas fa-lock" style="font-size:11px;"></i> FIL &mdash; Office Verification Record</div>
           <div class="row g-3 official-field">
-            <div class="col-md-4"><label class="bb-label" for="fil_name">FIL Officer Name <span class="opt">Office use</span></label><input type="text" id="fil_name" name="FIL_Name" class="bb-input" placeholder="FIL officer name"></div>
+            <div class="col-md-4"><label class="bb-label" for="fil_name">FIL Officer Name <span class="opt">Office use</span></label><input type="text" id="fil_name" name="FIL_Name" class="bb-input"></div>
             <div class="col-md-4"><label class="bb-label" for="fil_date">FIL Verification Date <span class="opt">Office use</span></label><input type="date" id="fil_date" name="FIL_Date" class="bb-input"></div>
-            <div class="col-md-4"><label class="bb-label" for="official_comment">Official Remarks <span class="opt">Office use</span></label><input type="text" id="official_comment" name="Official_Comment" class="bb-input" placeholder="Internal verification comment"></div>
+            <div class="col-md-4"><label class="bb-label" for="official_comment">Official Remarks <span class="opt">Office use</span></label><input type="text" id="official_comment" name="Official_Comment" class="bb-input"></div>
           </div>
         </div>
         <div class="card-nav-controls">
@@ -817,7 +818,7 @@
           </div>
 
           <div class="row g-3 mb-4">
-            <div class="col-md-6"><label class="bb-label" for="applicant_sig_name">Applicant's Full Name (as E-Signature) <span class="req">*</span></label><input type="text" id="applicant_sig_name" name="Applicants_Full_Name_Signature" class="bb-input" placeholder="Type your full legal name" required><span class="field-hint">Typing your full legal name acts as your electronic signature.</span><span class="print-sig-line"></span></div>
+            <div class="col-md-6"><label class="bb-label" for="applicant_sig_name">Applicant's Full Name (as E-Signature) <span class="req">*</span></label><input type="text" id="applicant_sig_name" name="Applicants_Full_Name_Signature" class="bb-input" required><span class="field-hint">Typing your full legal name acts as your electronic signature.</span><span class="print-sig-line"></span></div>
             <div class="col-md-6"><label class="bb-label" for="applicant_sig_date">Date of Application <span class="req">*</span></label><input type="date" id="applicant_sig_date" name="Applicants_Signature_Date" class="bb-input" required></div>
           </div>
 
@@ -832,9 +833,9 @@
 
       <!-- ACTION BAR -->
       <div class="form-action-bar">
-        <div>
-          <p><i class="fas fa-shield-alt me-2"></i><strong>Encrypted Email Transmission</strong> &mdash; Direct to credit officers.</p>
-          <p class="mt-1"><i class="fas fa-envelope me-2"></i>Submissions go to: <strong>info.bridgebucks@gmail.com</strong></p>
+        <div class="transmission-info-box">
+          <div class="transmission-heading"><i class="fas fa-shield-alt me-2"></i>Encrypted Email Transmission &mdash; Direct to credit officers.</div>
+          <div class="transmission-sub"><i class="fas fa-envelope me-2"></i>Submissions go to: <a href="mailto:info.bridgebucks@gmail.com" class="email-highlight">info.bridgebucks@gmail.com</a></div>
         </div>
         <div class="action-buttons">
           <button type="button" onclick="printForm()" class="btn-print-form"><i class="fas fa-print"></i> Print / Save as PDF</button>
@@ -845,24 +846,24 @@
     </form>
 
     <!-- UNDER FORM BOTTOM CTAS: UPLOAD PORTAL & ADVISOR CONSULTATION -->
-    <div class="mt-5 mb-3">
+    <div class="my-5">
       <div class="row g-4">
         <!-- Card 1: Already Downloaded? Upload Files Here -->
         <div class="col-lg-6">
-          <div style="background: linear-gradient(135deg, #073B78 0%, #031830 100%); border-radius: 16px; padding: 28px; color: #FFFFFF; box-shadow: 0 10px 25px rgba(7, 59, 120, 0.22); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="downloaded-upload-card" style="background: linear-gradient(135deg, #073B78 0%, #031830 100%); border-radius: 18px; padding: 34px 38px; color: #FFFFFF; box-shadow: 0 12px 30px rgba(7, 59, 120, 0.25); border: 1px solid rgba(244, 197, 66, 0.25); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                <span style="background: #F4C542; color: #031830; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.5px;">Already Downloaded?</span>
-                <span style="color: #94A3B8; font-size: 13px;"><i class="fas fa-folder-open me-1" style="color: #F4C542;"></i> Offline Submission</span>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+                <span style="background: #F4C542; color: #031830; font-size: 11.5px; font-weight: 800; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; letter-spacing: 0.5px;">Already Downloaded?</span>
+                <span style="color: #94A3B8; font-size: 13.5px; font-weight: 600;"><i class="fas fa-folder-open me-1" style="color: #F4C542;"></i> Offline Submission</span>
               </div>
-              <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 20px; margin-bottom: 8px;">Upload Your Filled Form &amp; Documents Here</h4>
-              <p style="color: #CBD5E1 !important; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
-                Have you printed or filled your form offline? Upload your completed application along with your Valid ID, Passport photo, Utility bill, Signature, NIN slip, and Evidence of travel directly to our credit desk.
+              <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 22px; margin-bottom: 12px; line-height: 1.35;">Upload Your Filled Form &amp; Documents Here</h4>
+              <p style="color: #CBD5E1 !important; font-size: 15px; line-height: 1.6; margin-bottom: 24px;">
+                Have you already downloaded or filled your application form offline? Upload your completed form and documents here.
               </p>
             </div>
             <div>
-              <a href="upload/" class="cta-btn-gold w-100" style="padding: 14px 20px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 14px;">
-                <i class="fas fa-file-upload" style="font-size: 16px;"></i> Upload Files Here <i class="fas fa-arrow-right"></i>
+              <a href="upload/" class="cta-btn-gold w-100" style="padding: 16px 24px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 15px; box-shadow: 0 6px 20px rgba(244, 197, 66, 0.25);">
+                <i class="fas fa-file-upload" style="font-size: 17px;"></i> Upload Files Here <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -870,19 +871,19 @@
 
         <!-- Card 2: Consult with an Advisor First? -->
         <div class="col-lg-6">
-          <div style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); border-radius: 16px; padding: 28px; color: #FFFFFF; border: 1px solid rgba(244, 197, 66, 0.3); box-shadow: 0 10px 25px rgba(15, 23, 42, 0.22); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+          <div class="downloaded-upload-card" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); border-radius: 18px; padding: 34px 38px; color: #FFFFFF; border: 1px solid rgba(244, 197, 66, 0.3); box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                <span style="background: #25D366; color: #FFFFFF; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.5px;">Need Assistance?</span>
-                <span style="color: #94A3B8; font-size: 13px;"><i class="fab fa-whatsapp me-1" style="color: #25D366;"></i> Instant Advisory</span>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+                <span style="background: #25D366; color: #FFFFFF; font-size: 11.5px; font-weight: 800; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; letter-spacing: 0.5px;">Need Assistance?</span>
+                <span style="color: #94A3B8; font-size: 13.5px; font-weight: 600;"><i class="fab fa-whatsapp me-1" style="color: #25D366;"></i> Instant Advisory</span>
               </div>
-              <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 20px; margin-bottom: 8px;">Consult with an Advisor First?</h4>
-              <p style="color: #CBD5E1 !important; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">
+              <h4 style="color: #FFFFFF !important; font-weight: 800; font-size: 22px; margin-bottom: 12px; line-height: 1.35;">Consult with an Advisor First?</h4>
+              <p style="color: #CBD5E1 !important; font-size: 15px; line-height: 1.6; margin-bottom: 24px;">
                 Need guidance before applying, custom financing terms, or information on other financial services not listed? Connect directly with a Bridge Bucks senior advisor on WhatsApp.
               </p>
             </div>
             <div>
-              <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20would%20like%20to%20consult%20with%20an%20advisor%20regarding%20financial%20services%20and%20unlisted%20options." target="_blank" style="background: #25D366; color: #FFFFFF; padding: 14px 20px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 14px; width: 100%; transition: all 0.3s ease;">
+              <a href="https://wa.me/2348067944657?text=Hello%20Bridge%20Bucks,%20I%20would%20like%20to%20consult%20with%20an%20advisor%20regarding%20financial%20services%20and%20unlisted%20options." target="_blank" style="background: #25D366; color: #FFFFFF; padding: 16px 24px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 15px; width: 100%; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);">
                 <i class="fab fa-whatsapp" style="font-size: 18px;"></i> Consult on WhatsApp <i class="fas fa-chevron-right"></i>
               </a>
             </div>
@@ -987,7 +988,7 @@
     <div class="row g-4 pb-5" style="border-bottom:1px solid rgba(255,255,255,.1);">
       <div class="col-lg-4 col-md-6"><div class="footer-widget"><div class="footer-logo mb-4"><a href="../../"><img src="../../assets/img/logo/bridgebucks logo.png" alt="Bridge Bucks" style="max-height:50px;"></a><div style="color: #F4C542; font-weight: 700; font-size: 13.5px; margin-top: 6px; letter-spacing: 0.3px;">(RC 7532296)</div></div><p style="color:#94A3B8;font-size:14px;line-height:1.7;">Bridge Bucks Services Ltd is Nigeria's premier provider of legitimate Proof of Funds, SME loans, and B2B agency financial solutions.</p></div></div>
       <div class="col-lg-4 col-md-6"><div class="footer-widget"><h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:24px;">Quick Navigation</h4><ul class="list-unstyled footer-nav-list row g-2"><li class="col-6"><a href="../../"><i class="fas fa-chevron-right me-1"></i>Home</a></li><li class="col-6"><a href="../../about/"><i class="fas fa-chevron-right me-1"></i>About Us</a></li><li class="col-6"><a href="../../pof/"><i class="fas fa-chevron-right me-1"></i>Proof of Funds</a></li><li class="col-6"><a href="../"><i class="fas fa-chevron-right me-1"></i>SME Loans</a></li><li class="col-6"><a href="../../partners/"><i class="fas fa-chevron-right me-1"></i>Partnerships</a></li><li class="col-6"><a href="../../contact/"><i class="fas fa-chevron-right me-1"></i>Contact Us</a></li></ul></div></div>
-      <div class="col-lg-4 col-md-6"><div class="footer-widget"><h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:24px;">Contact Us</h4><ul class="list-unstyled" style="line-height:2;font-size:14px;"><li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:#18AEEB;"></i>Ibadan, Oyo State, Nigeria</li><li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#18AEEB;"></i><a href="tel:+2348067944657" style="color:inherit;">+234 806 794 4657</a></li><li class="mb-2"><i class="fas fa-envelope me-2" style="color:#18AEEB;"></i><a href="mailto:info.bridgebucks@gmail.com" style="color:inherit;">info.bridgebucks@gmail.com</a></li><li><i class="fas fa-clock me-2" style="color:#18AEEB;"></i>Mon - Fri: 8:00 AM - 6:00 PM</li></ul></div></div>
+      <div class="col-lg-4 col-md-6"><div class="footer-widget"><h4 style="color:#fff;font-weight:700;font-size:18px;margin-bottom:24px;">Contact Us</h4><ul class="list-unstyled" style="line-height:2;font-size:14px;"><li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:#18AEEB;"></i>Ibadan, Nigeria</li><li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#18AEEB;"></i><a href="tel:+2348067944657" style="color:inherit;">+234 806 794 4657</a></li><li class="mb-2"><i class="fas fa-envelope me-2" style="color:#18AEEB;"></i><a href="mailto:info.bridgebucks@gmail.com" style="color:inherit;">info.bridgebucks@gmail.com</a></li><li><i class="fas fa-clock me-2" style="color:#18AEEB;"></i>Mon - Fri: 8:00 AM - 6:00 PM</li></ul></div></div>
     </div>
     <div class="pt-4 text-center" style="font-size:13px;"><p class="mb-0" style="color:#64748B;">&copy; 2026 Bridge Bucks Services Ltd. All Rights Reserved.</p></div>
   </div>
@@ -1010,6 +1011,7 @@
 <script src="../../assets/js/jquery.magnific-popup.min.js"></script>
 <script src="../../assets/js/wow.min.js"></script>
 <script src="../../assets/js/circle-progress.js"></script>
+<script src="../../assets/js/header.js"></script>
 <script src="../../assets/js/main.js"></script>
 
 <script>

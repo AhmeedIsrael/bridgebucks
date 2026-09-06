@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Upload Portal | Bridge Bucks Services Ltd</title>
-  <meta name="description" content="Upload your completed application form and required supporting documents (Valid ID, Passport Photo, Utility Bill, Signature, NIN Slip, Evidence of Travel) for Bridge Bucks.">
+  <title>POF Document Upload Portal | Bridge Bucks Services Ltd</title>
+  <meta name="description" content="Upload your completed POF application form and required supporting documents (Valid ID, Passport Photo, Utility Bill, Signature, NIN Slip, Evidence of Travel) for Bridge Bucks.">
+  <link rel="canonical" href="https://bridgebucks.com.ng/pof/apply/upload/">
   <link rel="shortcut icon" href="../../../assets/img/logo/bridgebucks logo.png" type="image/x-icon">
 
   <!-- CSS Dependencies -->
@@ -37,23 +38,11 @@
 
     .upload-hero {
       background: linear-gradient(135deg, #073B78 0%, #031830 100%);
-      padding: 60px 0 45px;
+      padding: 55px 0 40px;
       color: #FFFFFF;
       text-align: center;
       position: relative;
       overflow: hidden;
-    }
-
-    .upload-hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -10%;
-      width: 400px;
-      height: 400px;
-      background: rgba(244, 197, 66, 0.08);
-      border-radius: 50%;
-      pointer-events: none;
     }
 
     .upload-card {
@@ -188,19 +177,20 @@
 </head>
 <body>
 
-  <!-- SCROLL UP & OFFCANVAS MOBILE DRAWER -->
+  <!-- SCROLL UP -->
   <div class="scroll-up"><svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div>
-  <!-- Dynamic Offcanvas & Header Placeholders -->
+
+  <!-- DYNAMIC HEADER & OFFCANVAS CONTAINERS -->
   <div id="bb-offcanvas-placeholder"></div>
-  <div id="bb-header-placeholder" data-root="../../../" data-active="loans"></div>
+  <div id="bb-header-placeholder" data-root="../../../" data-active="pof"></div>
 
   <!-- HERO BANNER -->
   <section class="upload-hero">
     <div class="container" style="max-width: 900px;">
-      <span style="background: rgba(244, 197, 66, 0.2); color: #F4C542; font-size: 12px; font-weight: 800; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; letter-spacing: 1px;">Fast-Track Document Portal</span>
-      <h1 style="color: #FFFFFF !important; font-weight: 900; font-size: 36px; margin: 12px 0 8px;">Upload Completed Form &amp; Documents</h1>
-      <p style="color: #CBD5E1 !important; font-size: 16px; margin: 0 auto; max-width: 700px; line-height: 1.6;">
-        Already downloaded and filled your application form offline? Submit your completed form together with your supporting identity and travel documents directly to our credit review team.
+      <span style="background: rgba(244, 197, 66, 0.2); color: #F4C542; font-size: 12px; font-weight: 800; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; letter-spacing: 1px;">POF Document Portal</span>
+      <h1 style="color: #FFFFFF !important; font-weight: 900; font-size: 34px; margin: 12px 0 8px;">Upload Proof of Funds Application Documents</h1>
+      <p style="color: #CBD5E1 !important; font-size: 15.5px; margin: 0 auto; max-width: 700px; line-height: 1.6;">
+        Submit your completed POF application form, identity proofs, and supporting documents directly to our credit review team for fast verification.
       </p>
     </div>
   </section>
@@ -213,20 +203,20 @@
       <div class="info-notice-box d-flex align-items-start gap-3">
         <i class="fas fa-shield-alt text-primary fs-3 mt-1"></i>
         <div>
-          <h5 style="color: var(--navy); font-weight: 800; margin-bottom: 4px;">Secure &amp; Direct Credit Desk Submission</h5>
+          <h5 style="color: var(--navy); font-weight: 800; margin-bottom: 4px;">Secure &amp; Direct POF Desk Submission</h5>
           <p style="color: #475569; font-size: 14px; margin: 0; line-height: 1.5;">
-            Accepted Formats: <strong>PDF, JPG, PNG, JPEG</strong> (Up to 25 MB total). Please ensure all text and scanned documents are clear and legible. Need help? Call or WhatsApp <strong>+234 806 794 4657</strong>.
+            Accepted Formats: <strong>PDF, JPG, PNG, JPEG</strong> (Up to 25 MB total). Please ensure all text and scanned documents are clear and legible. Need assistance? Call or WhatsApp <strong>+234 806 794 4657</strong>.
           </p>
         </div>
       </div>
 
       <form id="docUploadForm" action="https://formsubmit.co/info.bridgebucks@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
         <!-- FormSubmit Hidden Settings -->
-        <input type="hidden" name="_subject" value="New Document Package Upload - Bridge Bucks Services Ltd">
+        <input type="hidden" name="_subject" value="New POF Document Upload - Bridge Bucks Services Ltd">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://bridgebucks.com.ng/loans/apply/upload/thank-you.html">
-        <input type="hidden" name="Submission_Source" value="Offline Completed Form & Supporting Documents Upload Portal">
+        <input type="hidden" name="_next" value="https://bridgebucks.com.ng/pof/apply/thank-you.html">
+        <input type="hidden" name="Submission_Source" value="POF Documents Upload Portal">
 
         <!-- SECTION 1: APPLICANT IDENTIFICATION -->
         <div class="upload-card">
@@ -254,8 +244,7 @@
             <div class="col-md-6">
               <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">Facility Service Selected <span class="req-star">*</span></label>
               <select name="Facility_Service" class="form-control form-control-custom" required style="background-color: #fff;">
-                <option value="SME Working Capital Loan">SME Working Capital Loan</option>
-                <option value="Proof of Funds (POF) Facility">Proof of Funds (POF) Facility</option>
+                <option value="Proof of Funds (POF) Facility" selected>Proof of Funds (POF) Facility</option>
                 <option value="Both POF & SME Loan">Both POF &amp; SME Loan</option>
               </select>
             </div>
@@ -268,7 +257,7 @@
             <div class="badge-icon"><i class="fas fa-folder-open"></i></div>
             <div>
               <h4 style="color: var(--navy); font-weight: 800; font-size: 20px; margin: 0;">2. Required Document Uploads</h4>
-              <p style="color: #64748B; font-size: 13px; margin: 0;">Upload your filled form and each required supporting document</p>
+              <p style="color: #64748B; font-size: 13px; margin: 0;">Upload your filled POF form and required supporting documents</p>
             </div>
           </div>
 
@@ -277,10 +266,10 @@
             <!-- 1. Filled Application Form -->
             <div class="col-md-6">
               <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
-                1. Filled Application Form <span class="req-star">*</span>
+                1. Filled POF Application Form <span class="req-star">*</span>
               </label>
               <div class="doc-dropzone" id="dz-filled-form">
-                <input type="file" name="Filled_Application_Form" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-filled-form')">
+                <input type="file" name="Filled_POF_Application_Form" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-filled-form')">
                 <i class="fas fa-file-pdf text-primary fs-2 mb-2"></i>
                 <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Click to Upload Filled Form</div>
                 <div class="file-status-text">PDF or clear scanned photos of pages</div>
@@ -355,26 +344,25 @@
             <!-- 7. Evidence of Travel -->
             <div class="col-12">
               <label class="form-label font-weight-bold" style="color: var(--navy); font-weight: 700; font-size: 14px;">
-                7. Evidence of Travel / Facility Purpose <span class="req-star">*</span>
+                7. Evidence of Travel / Visa Purpose <span class="req-star">*</span>
               </label>
               <div class="doc-dropzone" id="dz-travel-evidence">
                 <input type="file" name="Evidence_of_Travel" accept=".pdf,.jpg,.jpeg,.png" required onchange="handleFileSelect(this, 'dz-travel-evidence')">
                 <i class="fas fa-plane-departure text-primary fs-2 mb-2"></i>
-                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Evidence of Travel / Purpose</div>
-                <div class="file-status-text">Flight ticket, Admission Letter, Visa, Offer Letter, or Business Invoice</div>
+                <div style="font-weight: 700; font-size: 14px; color: var(--navy);">Upload Evidence of Travel / Admission</div>
+                <div class="file-status-text">Flight ticket, Admission Letter, Visa offer, or CAS/I-20 document</div>
               </div>
             </div>
 
-
-            <!-- 8. Account Opening Form (New Users Only - Optional) -->
+            <!-- 8. Account Opening Form (Optional) -->
             <div class="col-12">
               <div style="background: linear-gradient(135deg, rgba(7,59,120,0.04), rgba(244,197,66,0.06)); border: 1.5px dashed #CBD5E1; border-radius: 12px; padding: 20px 24px; margin-top: 8px;">
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
-                  <span style="background: #F4C542; color: #031830; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.5px; white-space: nowrap;">New User?</span>
-                  <span style="color: #073B78; font-weight: 700; font-size: 15px;">Upload Parallex Bank Account Opening Form Here</span>
-                  <span style="background: #E2E8F0; color: #64748B; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 10px;">Optional — If applicable</span>
+                  <span style="background: #F4C542; color: #031830; font-size: 11px; font-weight: 800; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.5px; white-space: nowrap;">New Account Applicants</span>
+                  <span style="color: #073B78; font-weight: 700; font-size: 15px;">Parallex Bank Account Opening Form</span>
+                  <span style="background: #E2E8F0; color: #64748B; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 10px;">Optional — New Accounts Only</span>
                 </div>
-                <p style="color: #64748B; font-size: 13.5px; margin-bottom: 14px; line-height: 1.5;">If you downloaded and filled the Parallex Bank account opening form, upload it here along with your other documents. (<a href="../../../assets/LATEST%20INDIVIDUAL%20ACCOUNT%20OPENING%20FORM.pdf" download="LATEST INDIVIDUAL ACCOUNT OPENING FORM.pdf" target="_blank" style="color: #073B78; font-weight: 700; text-decoration: underline;"><i class="fas fa-file-pdf me-1"></i>Download Parallex Account Opening Form PDF</a>)</p>
+                <p style="color: #64748B; font-size: 13.5px; margin-bottom: 14px; line-height: 1.5;">If you are applying for a new Parallex Bank account and downloaded the account opening PDF, upload your filled form here. (<a href="../../../assets/LATEST%20INDIVIDUAL%20ACCOUNT%20OPENING%20FORM.pdf" download="LATEST INDIVIDUAL ACCOUNT OPENING FORM.pdf" target="_blank" style="color: #073B78; font-weight: 700; text-decoration: underline;"><i class="fas fa-file-pdf me-1"></i>Download Parallex Account Opening Form PDF</a>)</p>
                 <div class="doc-dropzone" id="dz-account-opening-form">
                   <input type="file" name="Parallex_Account_Opening_Form" accept=".pdf,.jpg,.jpeg,.png" onchange="handleFileSelect(this, 'dz-account-opening-form')">
                   <i class="fas fa-file-alt text-primary fs-2 mb-2" style="color: #073B78;"></i>
@@ -386,11 +374,11 @@
 
           </div>
         </div>
+
         <!-- SECTION 3: ADDITIONAL REMARKS & DECLARATION -->
         <div class="upload-card">
           <div class="card-header-badge">
             <div class="badge-icon"><i class="fas fa-check-circle"></i></div>
-
             <div>
               <h4 style="color: var(--navy); font-weight: 800; font-size: 20px; margin: 0;">3. Remarks &amp; Submission</h4>
               <p style="color: #64748B; font-size: 13px; margin: 0;">Add any special instructions and confirm your submission</p>
@@ -405,12 +393,12 @@
           <div class="form-check mb-4" style="background: #F8FAFC; padding: 14px 18px 14px 44px; border-radius: 8px; border: 1px solid #E2E8F0;">
             <input class="form-check-input" type="checkbox" id="agree_declaration" required style="margin-left: -26px;">
             <label class="form-check-label" for="agree_declaration" style="font-size: 14px; color: #334155; line-height: 1.5;">
-              I confirm that all uploaded documents are authentic, legible, and belong to the applicant named above for credit processing by <strong>Bridge Bucks Services Ltd</strong>.
+              I confirm that all uploaded documents are authentic, legible, and belong to the applicant named above for POF clearance processing by <strong>Bridge Bucks Services Ltd</strong>.
             </label>
           </div>
 
           <button type="submit" class="btn-submit-upload" id="submitUploadBtn">
-            <span>Submit Documents to Credit Desk</span>
+            <span>Submit POF Documents to Credit Desk</span>
             <i class="fas fa-paper-plane ms-1"></i>
           </button>
         </div>
@@ -439,7 +427,7 @@
               <li class="col-6"><a href="../../../" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Home</a></li>
               <li class="col-6"><a href="../../../about/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>About Us</a></li>
               <li class="col-6"><a href="../../../pof/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Proof of Funds</a></li>
-              <li class="col-6"><a href="../../" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>SME Loans</a></li>
+              <li class="col-6"><a href="../../../loans/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>SME Loans</a></li>
               <li class="col-6"><a href="../../../partners/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Partnerships</a></li>
               <li class="col-6"><a href="../../../contact/" style="color:inherit;"><i class="fas fa-chevron-right me-1"></i>Contact Us</a></li>
             </ul>
